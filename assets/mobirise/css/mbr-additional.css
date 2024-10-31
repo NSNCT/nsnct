@@ -1053,7 +1053,7 @@ a {
 .cid-tYaQlBoUuu {
   padding-top: 5rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaQlBoUuu .mbr-section-title {
   text-align: left;
@@ -1067,6 +1067,9 @@ a {
 .cid-tW4AlMs2cK img,
 .cid-tW4AlMs2cK .item-img {
   width: 100%;
+  height: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .cid-tW4AlMs2cK .item:focus,
 .cid-tW4AlMs2cK span:focus {
@@ -1075,14 +1078,6 @@ a {
 .cid-tW4AlMs2cK .item {
   cursor: pointer;
   margin-bottom: 2rem;
-}
-.cid-tW4AlMs2cK .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.cid-tW4AlMs2cK .item {
-  padding: 0;
-  margin: 0;
 }
 .cid-tW4AlMs2cK .item-wrapper {
   position: relative;
@@ -1130,7 +1125,7 @@ a {
 .cid-tYaR672JvH {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaR672JvH .mbr-section-title {
   text-align: left;
@@ -1207,7 +1202,7 @@ a {
 .cid-tYaRBJ223J {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaRBJ223J .mbr-section-title {
   text-align: left;
@@ -1242,7 +1237,7 @@ a {
 .cid-tYaS0eIc01 {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaS0eIc01 .mbr-section-title {
   text-align: left;
@@ -1251,7 +1246,7 @@ a {
 .cid-tW3zx8dMdx {
   padding-top: 1rem;
   padding-bottom: 0rem;
-  background-color: #353535;
+  background-color: #b1c9d6;
 }
 .cid-tW3zx8dMdx img,
 .cid-tW3zx8dMdx .item-img {
@@ -1304,7 +1299,7 @@ a {
 .cid-tYaS0UzOrJ {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaS0UzOrJ .mbr-section-title {
   text-align: left;
@@ -1341,7 +1336,7 @@ a {
 .cid-tYaS3jdJ4i {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaS3jdJ4i .mbr-section-title {
   text-align: left;
@@ -1389,7 +1384,7 @@ a {
 .cid-tYaS48dTlq {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  background-color: #85ccaf;
+  background-color: #5e8ada;
 }
 .cid-tYaS48dTlq .mbr-section-title {
   text-align: left;

@@ -28,37 +28,142 @@
     
 </head>
 <body>
-  
-  <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top collapsed">
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    
-                        <a href="https://nsnct.org"><img src="assets/images/nsnct-logo-128x128.png" alt="Norwegian Society for Neutron Capture Therapy" style="height: 5.5rem;"></a>
-                    
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-brand text-black text-primary display-4" href="https://nsnct.org" target="_blank">Norwegian Society for Neutron Capture Therapy</a></span>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1b">News Related to Neutron Capture Therapy</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1d">What is Neutron Capture Therapy</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1e">About NSNCT</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1f">Related Associations</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1g">Membership</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#content4-1h">
-                            Contact</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#tabs1-y">Summary</a></li></ul>  
-                
-            </div>
-        </div>
-    </nav>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-</section>
+        /* Body Style */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff; /* Background color */
+            padding: 10px 20px;
+            border-bottom: 1px solid #fff; /* Light border */
+        }
+
+        /* Logo and Title Container */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            /*font-weight: bold;*/
+             flex-wrap: wrap; /* Allow content to wrap to next line */
+        }
+
+        .navbar-logo img {
+            height: 5.5rem; /* Adjust image height */
+            margin-right: 10px;
+        }
+
+        /* Menu Items */
+        .navbar-menu {
+            display: none; /* Hidden by default for small screens */
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .navbar-menu.active {
+            display: flex; /* Display menu when active */
+        }
+
+        .navbar-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-menu a:hover {
+            background-color: #f8f8f8;
+        }
+
+        /* Hamburger Icon */
+        .navbar-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        .navbar-toggle div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 4px 0;
+        }
+
+        /* For Larger Screens */
+        @media (min-width: 10000000px) {   /* 768px */
+            .navbar-menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                border: none;
+                box-shadow: none;
+            }
+
+            .navbar-menu a {
+                border: none;
+            }
+
+            .navbar-toggle {
+                display: none; /* Hide hamburger on large screens */
+            }
+        }
+    </style>
+    <!-- Navbar Section -->
+    <section class="menu" id="menu1-h">
+        <nav class="navbar">
+            <!-- Logo and Title -->
+            <a href="https://nsnct.org" class="navbar-brand">
+                <span class="navbar-logo">
+                    <img src="nsnct_logo.png" alt="NSNCT">
+                </span>
+                Norwegian Society for Neutron Capture Therapy
+            </a>
+            <!-- Hamburger Menu -->
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html#content4-1b">News</a>
+                <a href="index.html#content4-1d">What is Neutron Capture Therapy</a>
+                <a href="index.html#content4-1e">About NSNCT</a>
+                <a href="index.html#content4-1f">Related Associations</a>
+                <a href="index.html#content4-1g">Membership</a>
+                <a href="index.html#content4-1h">Contact</a>
+                <a href="index.html#tabs1-y">Summary</a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("navbarMenu");
+            menu.classList.toggle("active");
+        }
+    </script>    
 
 <style>
 /* lines extending to the width of the page and a word breaking in the middle */
@@ -86,10 +191,10 @@
         flex-grow: 0.05; /* Prevent the left line from stretching */
 /*        width: 20; /* left line */
         }
-/* end of lines extending to the width of the page and a word breaking in the middle */
+/* end of style of lines extending to the width of the page and a word breaking in the middle */
 </style>     
 <section class="content4 cid-tYb2v7BZch" id="content4-1b"> <!--create vertical space-->
-<br><br><br><br><br>  
+<br>
 </section>
 <span style="position: relative; top: 0px;">
     <!-- line-break Section -->
@@ -122,19 +227,26 @@
             padding: 20px;
             background: #e8efde;
         }
+        .grid-grey-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: #b1c9d6;
+        }
         .separator {
             line-height: 1.6;
             background-color: white;
             color: #333;
         }
-        .grid-item {
+        .grid-green-item {
             display: flex;
             justify-content: flex-start; /* Aligns content to the top */
             align-items: center;    /*  Centers vertically */
             flex-direction: column;  /* Keeps text below the image */
             padding: 15px;
 /*            background: #f9f9f9; */
-            background: #e8efde;
+            background: #e8efde; /* green */
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -154,25 +266,38 @@
             text-align: center;
             font-family: 'Roboto Condensed', Arial, sans-serif;
         }
-        .grid-item img {
+        .grid-white-item {
+            display: flex;
+            justify-content: flex-start; /* Aligns content to the top */
+            align-items: center;    /*  Centers vertically */
+            flex-direction: column;  /* Keeps text below the image */
+            padding: 15px;
+            background: white; 
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+        }
+        .grid-green-item img {
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
             border-radius: 4px; 
         }
-        .grid-item h3 {
+        .grid-green-item h3 {
             font-size: 18px;
             margin-bottom: 10px;
             font-family: 'Roboto Condensed', Arial, sans-serif;
         }        
-        .grid-item a {
+        .grid-green-item a {
             text-decoration: none;
             color: #6592e6 /* #0078d4; */
             font-size: 16px;
             font-family: 'Roboto Condensed', Arial, sans-serif;
             line-height: 1.6;
         }
-        .grid-item p {
+        .grid-green-item p {
             font-size: 16px;
             margin-top: 0;
             margin-bottom: 10px;
@@ -205,30 +330,52 @@
             font-family: 'Roboto Condensed', Arial, sans-serif;
             line-height: 1.6; /* Line spacing for paragraphs */
             color: #333; /* Optional: sets a dark gray color for readability */
+        }
+        .grid-white-item img {
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto 10px auto; /* Automatically centers the image horizontally */
+            border-radius: 4px; 
+            display: block; /* Ensures the image is treated as a block element */
+        }        
+        .grid-white-item a {
+            text-decoration: none;
+            color: #6592e6 /* #0078d4; */
+            font-size: 16px;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .grid-white-item p {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+            line-height: 1.6; /* Line spacing for paragraphs */
+            color: #333; /* Optional: sets a dark gray color for readability */
         }       
 </style>
     <section class="grid-section">
         
-        <div class="grid-item">
+        <div class="grid-green-item">
             <img src="euroboron10.png" alt="10th European Conference on Boron Chemistry">
             <p><a href="https://www.euroboron10.eu" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a>
                             <br>06-10 July 2025<br> Łódź, Poland</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-green-item">
             <img src="ISNCT_webinar2024December13_Keiji Nihei.png" alt="Webinar of the ISNCT-Prof. Keiji Nihei">
             <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" class="text-primary" target="_blank">"Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan"<br>by Prof. Akira Matsumura, MD, PhD</a>
-                            04 Oct 2024<br>Online</p>
-        </div>
-        <div class="grid-item">
-            <img src="akira-matsumura.png" alt="Webinar of the ISNCT–Prof. Akira Matsumura">
-            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" class="text-primary" target="_blank">"The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?"<br>by Prof. Keiji Nihei, MD, PhD</a>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">"Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan"<br>by Prof. Keiji Nihei, MD, PhD</a>
                             <br>13 Dec 2024<br>Online</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-green-item">
+            <img src="akira-matsumura.png" alt="Webinar of the ISNCT–Prof. Akira Matsumura">
+            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">"The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?"<br>by Prof. Akira Matsumura, MD, PhD</a>
+                            <br>04 Oct 2024<br>Online</p>
+        </div>
+        <div class="grid-green-item">
             <img src="advances-in-boron-neutron-capture-therapy.jpg" alt="Book: “Advances in Boron Neutron Capture Therapy”">
-            <p>Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" class="text-primary" target="_blank">“Advances in Boron Neutron Capture Therapy”</a>
+            <p>Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" target="_blank">“Advances in Boron Neutron Capture Therapy”</a>
                             <br>published by the International Atomic Energy Agency (IAEA)</p>
         </div>
     </section>
@@ -237,7 +384,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong>News <a href="news.html" class="text-primary" target="_blank">Repository</a></strong></h3>               
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong>News <a href="news.html" target="_blank">Repository</a></strong></h3>               
             </div>
         </div>
     </div>
@@ -367,76 +514,26 @@
         </div>
 <section class="content4 cid-tYb2v7BZch" style="padding: 10px 0">
 </section>
-<section class="gallery2 cid-tW3zx8dMdx" id="gallery2-12">
-<style>    
-.item-img img {
-            width: 100%;
-            height: 150px; /* Fixed height for all images */
-            object-fit: contain; /* Ensures images are well-fitted */
-            display: block;
-            padding-top:10px;
-        }    
-</style>    
-    <div class="container">
-        
-        <div class="row mt-4">
-            <div class="item features-image сol-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <a href="https://isnct.net/" target="_blank"><img src="ISNCT_Logo.png" alt="ISNCT"></a>
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-4">
-                            International Society for Neutron Capture Therapy (<a href="https://isnct.net/" class="text-primary" target="_blank">ISNCT</a>)
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <a href="http://www.jsnct.jp/e/" target="_blank"><img src="jsnct_logo.png" alt="JSNCT"></a>
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-4">Japanese Society of Neutron Capture Therapy (<a href="http://www.jsnct.jp/e/" class="text-primary" target="_blank">JSNCT</a>)</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <a href="https://tsnct.org.tw/eng/" target="_blank"><img src="tsnct_logo.png" alt="TSNCT"></a>
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-4">Taiwan Society of Neutron Capture Therapy (<a href="https://tsnct.org.tw/eng/" class="text-primary" target="_blank">TSNCT</a>)</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <a href="https://dgbnct.com/" target="_blank"><img src="dgbnct_logo.png" alt="DGBNCT" title=""></a>
-                    </div>
-                    <div class="item-content">
-                        
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-4">German Society of Boron Neutron Capture Therapy (<a href="https://dgbnct.com/" class="text-primary" target="_blank">DGBNCT</a>)</p>
-                    </div>
-                    
-                </div>
-            </div>
+<section class="grid-grey-section">      
+        <div class="grid-white-item">
+            <img src="ISNCT_Logo.png" alt="ISNCT">
+            <p>International Society for Neutron Capture Therapy (<a href="https://isnct.net/" target="_blank">ISNCT</a>)</p>
         </div>
-    </div>
-</section>
+        <div class="grid-white-item">
+            <img src="jsnct_logo.png" alt="JSNCT">
+            <p>Japanese Society of Neutron Capture Therapy (<a href="http://www.jsnct.jp/e/" target="_blank">JSNCT</a>)</p>
+        </div>
+        <div class="grid-white-item">
+            <img src="tsnct_logo.png" alt="TSNCT">
+            <p>Taiwan Society of Neutron Capture Therapy (<a href="https://tsnct.org.tw/eng/" target="_blank">TSNCT</a>)</p>
+        </div>
+        <div class="grid-white-item">
+            <br><br>
+            <img src="dgbnct_logo.png" alt="DGBNCT">
+            <br>
+            <p>German Society of Boron Neutron Capture Therapy (<a href="https://dgbnct.com/" target="_blank">DGBNCT</a>)</p>
+        </div>
+    </section>
 
 <section class="content4 cid-tYb2v7BZch" id="content4-1g" style="padding: 10px 0">
 </section>

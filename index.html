@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
+  <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image:src" content="assets/images/index-meta.png">
   <meta property="og:image" content="assets/images/index-meta.png">
@@ -36,11 +36,6 @@
             box-sizing: border-box;
         }
 
-        /* Body Style */
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-        }
-
         /* Navbar Styles */
         .navbar {
             display: flex;
@@ -49,22 +44,30 @@
             background-color: #fff; /* Background color */
             padding: 10px 20px;
             border-bottom: 1px solid #fff; /* Light border */
+            flex-wrap: wrap; /* Allow wrapping */
         }
 
         /* Logo and Title Container */
         .navbar-brand {
             display: flex;
+            flex-wrap: wrap;  /*Allow wrapping of brand name */
             align-items: center;
             text-decoration: none;
             color: #333;
+            font-family: 'Roboto', Arial, sans-serif;
             font-size: 1.2rem;
             /*font-weight: bold;*/
-             flex-wrap: wrap; /* Allow content to wrap to next line */
+            max-width: 100%; /* Prevent overflow */
         }
 
         .navbar-logo img {
             height: 5.5rem; /* Adjust image height */
+            width: auto; /* Automatically adjust the width to maintain aspect ratio */
             margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            white-space: normal; /* Allow text to wrap */
         }
 
         /* Menu Items */
@@ -110,7 +113,7 @@
         }
 
         /* For Larger Screens */
-        @media (min-width: 10000000px) {   /* 768px */
+        @media (min-width: 1000000px) {   /* 768px */
             .navbar-menu {
                 display: flex;
                 flex-direction: row;
@@ -129,14 +132,14 @@
         }
     </style>
     <!-- Navbar Section -->
-    <section class="menu" id="menu1-h">
-        <nav class="navbar">
+    <section class="navbar" id="menu1-h">
             <!-- Logo and Title -->
             <a href="https://nsnct.org" class="navbar-brand">
                 <span class="navbar-logo">
                     <img src="nsnct_logo.png" alt="NSNCT">
+                </span>&nbsp;&nbsp;
+                <span class="navbar-brand">Norwegian Society for Neutron Capture Therapy
                 </span>
-                Norwegian Society for Neutron Capture Therapy
             </a>
             <!-- Hamburger Menu -->
             <div class="navbar-toggle" onclick="toggleMenu()">
@@ -154,7 +157,6 @@
                 <a href="index.html#content4-1h">Contact</a>
                 <a href="index.html#tabs1-y">Summary</a>
             </div>
-        </nav>
     </section>
 
     <!-- JavaScript for Hamburger Menu -->

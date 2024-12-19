@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
+  <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image:src" content="assets/images/news-meta.png">
   <meta property="og:image" content="assets/images/news-meta.png">
@@ -28,7 +28,145 @@
   
 </head>
 <body>
-  
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fafef5; /* Background color */
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd; /* Light border */
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+
+        /* Logo and Title Container */
+        .navbar-brand {
+            display: flex;
+            flex-wrap: wrap;  /*Allow wrapping of brand name */
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 1.2rem;
+            /*font-weight: bold;*/
+            max-width: 100%; /* Prevent overflow */
+        }
+
+        .navbar-logo img {
+            height: 5.5rem; /* Adjust image height */
+            width: auto; /* Automatically adjust the width to maintain aspect ratio */
+            margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            white-space: normal; /* Allow text to wrap */
+        }
+
+        /* Menu Items */
+        .navbar-menu {
+            display: none; /* Hidden by default for small screens */
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .navbar-menu.active {
+            display: flex; /* Display menu when active */
+        }
+
+        .navbar-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-menu a:hover {
+            background-color: #f8f8f8;
+        }
+
+        /* Hamburger Icon */
+        .navbar-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        .navbar-toggle div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 4px 0;
+        }
+
+        /* For Larger Screens */
+        @media (min-width: 1000000px) {   /* 768px */
+            .navbar-menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                border: none;
+                box-shadow: none;
+            }
+
+            .navbar-menu a {
+                border: none;
+            }
+
+            .navbar-toggle {
+                display: none; /* Hide hamburger on large screens */
+            }
+        }
+    </style>
+    <!-- Navbar Section -->
+    <section class="navbar" id="menu1-h">
+            <!-- Logo and Title -->
+            <a href="https://nsnct.org" class="navbar-brand">
+                <span class="navbar-logo">
+                    <img src="nsnct_logo.png" alt="NSNCT">
+                </span>&nbsp;&nbsp;
+                <span class="navbar-brand">Norwegian Society for Neutron Capture Therapy
+                </span>
+            </a>
+            <!-- Hamburger Menu -->
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Dropdown Menu -->
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html#content4-1b">News</a>
+                <a href="index.html#content4-1d">What is Neutron Capture Therapy</a>
+                <a href="index.html#content4-1e">About NSNCT</a>
+                <a href="index.html#content4-1f">Related Associations</a>
+                <a href="index.html#content4-1g">Membership</a>
+                <a href="index.html#content4-1h">Contact</a>
+                <a href="index.html#tabs1-y">Summary</a>
+            </div>
+    </section>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("navbarMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+<!--  
   <section class="menu cid-s48OLK6784" once="menu" id="menu1-1j">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top collapsed">
@@ -60,7 +198,7 @@
     </nav>
 
 </section>
-
+-->
 <section class="content14 cid-tYaZJH5Biq" id="content14-1k">
     
     

@@ -25,7 +25,27 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <!--style for translation drop down-->
+  <style>
+    /* Change dropdown text appearance */
+    .goog-te-gadget-simple {
+      background-color: #f8f9fa; /* Light gray background */
+      border: 1px solid #ccc; /* Border for better visibility */
+      padding: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
     
+    .goog-te-gadget-simple:before {
+      content: "EN / NO"; /* Custom dropdown text */
+    }
+
+    /* Hide the default "Select Language" text */
+    .goog-te-gadget-simple span {
+      display: none !important;
+    }
+  </style>  
 </head>
 <body>
     <style>
@@ -166,7 +186,20 @@
             menu.classList.toggle("active");
         }
     </script>    
+<!--translation drop down-->   
+<div id="google_translate_element" style="text-align: right;"></div>
 
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,no', // Only English and Norwegian
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
 /* lines extending to the width of the page and a word breaking in the middle */
         .line-break-container { 
@@ -420,8 +453,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong>News <a href="news.html" target="_blank">Repository</a></strong></h3>
-                <span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>.</h4></span>               
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong><a href="news.html" target="_blank">News Repository</a></strong></h3>
+                <span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a></h4></span>               
             </div>
         </div>
     </div>

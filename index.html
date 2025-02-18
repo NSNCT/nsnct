@@ -182,12 +182,14 @@
         .center-text {
             margin: 0 10px; 
             /* margin-right: 10px; Space between the text and the line */
-            font-family: Libre Franklin; /* Matches the style of the text */
-            font-weight: 600; /* 100 -- 900, 400 is normal */
+            font-family: Garamond;
+            /*font-family: Libre Franklin;  Matches the style of the text */
+            font-weight: 700; /* 100 -- 900, 400 is normal */
             text-transform: uppercase;
             letter-spacing: 2px; /* Adjust spacing for aesthetics */
             background-color: #dbf0fa;   
             text-align: left;
+            padding: 5px; /* Adds padding on all sides */
         }
         .line:first-child {
         flex-grow: 0.05; /* Prevent the left line from stretching */
@@ -202,7 +204,7 @@
     <!-- line-break Section -->
         <div class="line-break-container">
             <span class="line"></span>
-            <span class="center-text">News Related to Neutron Capture Therapy</span>
+            <span class="center-text">News</span>
             <span class="line"></span>
         </div>
 </span>    
@@ -287,6 +289,13 @@
             margin-bottom: 10px;
             border-radius: 4px; 
         }
+        .grid-green-item iframe {
+        max-width: 100%;
+        height: auto;  /* Changed from auto to 100% */
+        aspect-ratio: 1 / 1; /* This makes the height equal to the width */
+        margin-bottom: 10px;
+        border-radius: 4px;
+        }
         .grid-green-item h3 {
             font-size: 18px;
             margin-bottom: 10px;
@@ -364,6 +373,11 @@
                             <br>06-10 July 2025<br> Łódź, Poland</p>
         </div>
         <div class="grid-green-item">
+            <img src="PTCOG63.png" alt="PTCOG 63 in Buenos Aires, 2025”">
+            <p><a href="https://ptcog63.org/" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a>
+                            <br>02-07 June 2025 <br>Buenos Aires, Argentina</p>
+        </div>
+        <div class="grid-green-item">
             <img src="ISNCT_webinar2024December13_Keiji Nihei.png" alt="Webinar of the ISNCT-Prof. Keiji Nihei">
             <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
                             <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">"Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan"<br>by Prof. Keiji Nihei, MD, PhD</a>
@@ -374,6 +388,26 @@
             <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
                             <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">"The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?"<br>by Prof. Akira Matsumura, MD, PhD</a>
                             <br>04 Oct 2024<br>Online</p>
+        </div>
+   <!-- </section>-->
+   <!-- <section class="grid-section">-->
+        
+        <div class="grid-green-item">
+            <img src="Heron AB-BNCT.png" alt="Heron AB-BNCT">
+            <p><a href="https://www.heron-neutron.com/en/" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system</a>
+                            <br>and collaborated with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers (ref <a href="https://www.taiwan-healthcare.org/en/news-detail?id=0smrg9mgifi1bmu1" target="_blank">1</a>, <a href="https://www.taiwan-healthcare.org/zh/news-detail?id=0srnfgdra4f0fw15" target="_blank">2</a>)<br>Nov 2024</p>
+        </div>
+        <div class="grid-green-item">
+            <iframe src="https://www.youtube-nocookie.com/embed/p356p_8CoEw?si=QRke6r_N8Zgm_y3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=94faa22fcf" target="_blank">"Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer"<br>by Prof. Ignacio Porras</a>
+                            <br>08 Mar 2024<br>Online</p>
+        </div>
+        <div class="grid-green-item">
+            <iframe src="https://www.youtube-nocookie.com/embed/S6zP9NILo6g?si=6_BPQbv1cJxi-1Lr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=e2d8551230" target="_blank">"Personal experience during the clinical commissioning of a BNCT facility and future prospects"<br>by Dr. Naonori Hu</a>
+                            <br>01 Dec 2023<br>Online</p>
         </div>
         <div class="grid-green-item">
             <img src="advances-in-boron-neutron-capture-therapy.jpg" alt="Book: “Advances in Boron Neutron Capture Therapy”">
@@ -386,7 +420,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-12">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong>News <a href="news.html" target="_blank">Repository</a></strong></h3>               
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4"><strong>News <a href="news.html" target="_blank">Repository</a></strong></h3>
+                <span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>.</h4></span>               
             </div>
         </div>
     </div>
@@ -430,7 +465,7 @@
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-12">
                 <span style="position: relative; top: 20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>An article introducing Boron Neutron Capture Therapy on</strong>&nbsp;<a href="https://www.tu.no/artikler/noytronstraler-tar-kreften/269168" class="text-primary" target="_blank">Teknisk Ukeblad</a> (in Norwegian).</h4></span><br>
-                <span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>.</h4></span>
+                <!--<span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>.</h4></span> -->
                 
             </div>
         </div>
@@ -616,7 +651,7 @@
         /* Left text content styling */
         .text-content {
             flex: 1; /* Takes up remaining space */
-            font-family: Roboto Condensed, Arial, sans-serif;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
             font-size: 18px;
             line-height: 1.5;
             color: #333; /* Dark gray text */
@@ -645,7 +680,7 @@
 <div class="container">
         <!-- Left Text Section -->
         <div class="text-content">
-            <h5>Reach out to NSNCT in Bergen and Tromsø.</h5><br>
+            <h5>Reach out to NSNCT in Bergen and Tromsø</h5><br>
             <p></p>
             <p>
                 Inndalsveien 28, 5063 Bergen<br><br>

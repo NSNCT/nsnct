@@ -27,15 +27,21 @@
     /* Change dropdown text appearance */
     .goog-te-gadget-simple {
       background-color: #f8f9fa; /* Light gray background */
-      border: 1px solid #ccc; /* Border for better visibility */
-      padding: 5px;
-      font-size: 14px;
+      border: 1px solid #eee; /* Border for better visibility */
+      /*padding: 10px 10px;  Increased padding for a larger button */
+      padding: 5px; 
+      font-size: 18px;
       font-weight: bold;
       cursor: pointer;
+      border-radius: 5px; /* Slightly rounded edges for a better appearance */
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Vertically align items */
+      gap: 8px; /* Space between text and logo */
+      margin-top: 10px;
     }
     
     .goog-te-gadget-simple:before {
-      content: "EN / NO"; /* Custom dropdown text */
+      content: "EN / NO / JP"; /* Custom dropdown text */
     }
 
     /* Hide the default "Select Language" text */
@@ -195,7 +201,7 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,no', // Only English and Norwegian
+        includedLanguages: 'en,no,ja', // Only English and Norwegian
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }

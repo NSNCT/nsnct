@@ -25,31 +25,67 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  <!--style for translation drop down-->
+  <!--style for translation dropdown-->
   <style>
     /* Change dropdown text appearance */
     .goog-te-gadget-simple {
       background-color: #f8f9fa; /* Light gray background */
-      border: 1px solid #ccc; /* Border for better visibility */
-      padding: 5px;
-      font-size: 14px;
+      border: 1px solid #eee; /* Border for better visibility */
+      /*padding: 10px 10px;  Increased padding for a larger button */
+      padding: 5px; 
+      font-size: 18px;
       font-weight: bold;
       cursor: pointer;
+      border-radius: 5px; /* Slightly rounded edges for a better appearance */
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Vertically align items */
+      gap: 8px; /* Space between text and logo */
     }
     
     .goog-te-gadget-simple:before {
-      content: "EN / NO"; /* Custom dropdown text */
+      content: "EN / NO / JP"; /* Custom dropdown text */
     }
 
     /* Hide the default "Select Language" text */
     .goog-te-gadget-simple span {
       display: none !important;
     }
+
     .goog-te-gadget-simple img {
     display: none !important;
     }
   </style>  
+  <!--style: lines extending to the width of the page and a word breaking in the middle-->
+  <style>
+        .line-break-container { 
+            display: flex;
+            align-items: center; 
+            width: 100%;
+        }
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: black;
+        }
+        .center-text {
+            margin: 0 10px; 
+            /* margin-right: 10px; Space between the text and the line */
+            font-family: Garamond;
+            /*font-family: Libre Franklin;  Matches the style of the text */
+            font-weight: 700; /* 100 -- 900, 400 is normal */
+            text-transform: uppercase;
+            letter-spacing: 2px; /* Adjust spacing for aesthetics */
+            background-color: #dbf0fa;   
+            text-align: left;
+            padding: 5px; /* Adds padding on all sides */
+        }
+        .line:first-child {
+        flex-grow: 0.05; /* Prevent the left line from stretching */
+        }
+  </style> 
+  <!--end of style of lines extending to the width of the page and a word breaking in the middle--> 
 </head>
+<!-----------------------body-------------------------->
 <body>
     <style>
         /* General Reset */
@@ -189,50 +225,21 @@
             menu.classList.toggle("active");
         }
     </script>    
-<!--translation drop down-->   
+<!--translation dropdown-->   
 <div id="google_translate_element" style="text-align: right;"></div>
 
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,no', // Only English and Norwegian
+        includedLanguages: 'en,no,ja', // Only English and Norwegian
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }
   </script>
 
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<style>
-/* lines extending to the width of the page and a word breaking in the middle */
-        .line-break-container { 
-            display: flex;
-            align-items: center; 
-            width: 100%;
-        }
-        .line {
-            flex-grow: 1;
-            height: 1px;
-            background-color: black;
-        }
-        .center-text {
-            margin: 0 10px; 
-            /* margin-right: 10px; Space between the text and the line */
-            font-family: Garamond;
-            /*font-family: Libre Franklin;  Matches the style of the text */
-            font-weight: 700; /* 100 -- 900, 400 is normal */
-            text-transform: uppercase;
-            letter-spacing: 2px; /* Adjust spacing for aesthetics */
-            background-color: #dbf0fa;   
-            text-align: left;
-            padding: 5px; /* Adds padding on all sides */
-        }
-        .line:first-child {
-        flex-grow: 0.05; /* Prevent the left line from stretching */
-/*        width: 20; /* left line */
-        }
-/* end of style of lines extending to the width of the page and a word breaking in the middle */
-</style>     
+    
 <section class="content4 cid-tYb2v7BZch" id="content4-1b"> <!--create vertical space-->
 <br>
 </section>
@@ -451,13 +458,13 @@
                             <br>published by the International Atomic Energy Agency (IAEA)</p>
         </div>
     </section>
-
-<p style="font-family: 'Roboto Condensed', Arial, sans-serif; margin-left: 120px; position: relative; top: 10px; margin-bottom: 40px;">
+<div class="container">    
+<p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 10px; margin-bottom: 40px;">
   <strong><a href="news.html" class="text-primary" target="_blank">News Repository</a></strong>
   <br><br>
   <strong>More presentations and interviews on </strong><a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>
 </p>
-
+</div>
 <section class="content4 cid-tYb2v7BZch" id="content4-1d">
     <!-- line-break Section -->
         <div class="line-break-container">
@@ -489,19 +496,12 @@
         </div>
     </section>
 
-<section class="content4 cid-u6tw0m5aOe" id="content4-1n">
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <span style="position: relative; top: 20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>An article introducing Boron Neutron Capture Therapy on</strong>&nbsp;<a href="https://www.tu.no/artikler/noytronstraler-tar-kreften/269168" class="text-primary" target="_blank">Teknisk Ukeblad</a> (in Norwegian).</h4></span><br>
-                <!--<span style="position: relative; top: -20px;"><h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-4"><strong>More presentations and interviews on</strong>&nbsp;<a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>.</h4></span> -->
-                
-            </div>
-        </div>
-    </div>
-</section>
+ 
+<div class="container">    
+<p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 20px; margin-bottom: 60px;">
+  <strong>An article introducing Boron Neutron Capture Therapy on </strong><a href="https://www.tu.no/artikler/noytronstraler-tar-kreften/269168" class="text-primary" target="_blank">Teknisk Ukeblad</a> (in Norwegian)
+</p>
+</div>    
 
 <section class="content4 cid-tYb2v7BZch" id="content4-1e">
 </section>
@@ -649,14 +649,10 @@
             <span class="line"></span>
         </div>
 <section class="content4 cid-tYb2v7BZch" id="content4-1l">   
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-12">
-                <span style="position: relative; top: 15px;">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-4">Contact NSNCT Team <a href="https://docs.google.com/forms/d/e/1FAIpQLScZvy3ml92wTmCwSGoMi64hjwevftryx8kmaPnn0CZyrAL4Eg/viewform?usp=pp_url" class="text-primary" target="_blank">here </a>or reach out via <a href="mailto:post@nsnct.org" class="text-primary">email</a>.</h3>
-                </span>               
-            </div>
-        </div>
+    <div class="container">    
+    <p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 20px; margin-bottom: 20px;">
+    Contact NSNCT Team <a href="https://docs.google.com/forms/d/e/1FAIpQLScZvy3ml92wTmCwSGoMi64hjwevftryx8kmaPnn0CZyrAL4Eg/viewform?usp=pp_url" class="text-primary" target="_blank">here </a>or reach out via <a href="mailto:post@nsnct.org" class="text-primary">email</a>.
+    </p>
     </div>
 </section>
 

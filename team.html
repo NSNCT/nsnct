@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -177,7 +177,29 @@
             font-weight: normal;
         }
 
-        /* Hide Google Translate on mobile */
+        /* Hide Google Translate automatic banner */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+            position: static !important;
+        }
+
+        .skiptranslate {
+            display: none !important;
+        }
+
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+
+        body > .skiptranslate {
+            display: none !important;
+        }
+
+        /* Hide Google Translate on mobile 
         @media (max-width: 768px) {
             #google_translate_element {
                 display: none !important;
@@ -191,7 +213,7 @@
                 top: 0 !important;
             }
         }
-
+        */
         /* Sections */
         .projects-section {
             background: #f5f2e8;

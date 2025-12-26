@@ -1,239 +1,1012 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="assets/images/news-meta.png">
-  <meta property="og:image" content="assets/images/news-meta.png">
-  <meta name="twitter:title" content="News Repository">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/nsnct-logo-128x128.png" type="image/x-icon">
-  <meta name="description" content="Collection of current and previous activities and news related to Neutron Capture Therapy. For a comprehensive collection, please visit https://isnct.net/">
-  
-  
-  <title>News Repository</title>
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  <!--style for translation drop down-->
-  <style>
-    /* Change dropdown text appearance */
-    .goog-te-gadget-simple {
-      background-color: #f8f9fa; /* Light gray background */
-      border: 1px solid #eee; /* Border for better visibility */
-      /*padding: 10px 10px;  Increased padding for a larger button */
-      padding: 5px; 
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px; /* Slightly rounded edges for a better appearance */
-      display: flex; /* Use flexbox to align items */
-      align-items: center; /* Vertically align items */
-      gap: 8px; /* Space between text and logo */
-      margin-top: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Norwegian Society for Neutron Capture Therapy (NSNCT) (Norsk Forening for Nøytroninnfangingsterapi) helps develop Neutron Capture Therapy as a cancer treatment procedure and a tool for managing specific diseases. NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.">
+    <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, neutron capture therapy, cancer treatment, boron neutron capture therapy">
+    <title>Norwegian Society for Neutron Capture Therapy (NSNCT)</title>
+    <link rel="icon" type="image/png" href="nsnct-logo-128x128.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,no',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
     }
-    
-    .goog-te-gadget-simple:before {
-      content: "EN / NO / JP"; /* Custom dropdown text */
-    }
+    </script>
 
-    /* Hide the default "Select Language" text */
-    .goog-te-gadget-simple span {
-      display: none !important;
-    }
-    .goog-te-gadget-simple img {
-    display: none !important;
-    }
-  </style>
-  
-</head>
-<body>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Navbar Styles */
-        .navbar {
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('trolltunga_ycc.JPG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #fafef5; /* Background color */
-            padding: 10px 20px;
-            border-bottom: 1px solid #ddd; /* Light border */
-            flex-wrap: wrap; /* Allow wrapping */
-        }
-
-        /* Logo and Title Container */
-        .navbar-brand {
-            display: flex;
-            flex-wrap: wrap;  /*Allow wrapping of brand name */
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            font-family: 'Roboto', Arial, sans-serif;
-            font-size: 1.2rem;
-            /*font-weight: bold;*/
-            max-width: 100%; /* Prevent overflow */
-        }
-
-        .navbar-logo img {
-            height: 5.5rem; /* Adjust image height */
-            width: auto; /* Automatically adjust the width to maintain aspect ratio */
-            margin-right: 10px;
-        }
-
-        .navbar-brand span {
-            white-space: normal; /* Allow text to wrap */
-        }
-
-        /* Menu Items */
-        .navbar-menu {
-            display: none; /* Hidden by default for small screens */
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            position: relative;
             z-index: 10;
         }
 
-        .navbar-menu.active {
-            display: flex; /* Display menu when active */
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
         }
 
-        .navbar-menu a {
+        .logo-link {
             text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            border-bottom: 1px solid #f0f0f0;
-            transition: background-color 0.3s;
+            color: inherit;
+            display: flex;
+            align-items: center;
         }
 
-        .navbar-menu a:hover {
-            background-color: #f8f8f8;
+        .logo-link:hover {
+            color: #d4af37;
         }
 
-        /* Hamburger Icon */
-        .navbar-toggle {
-            display: block;
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;  /* ADD THIS LINE */
+        }
+
+        .nav-links li {
+            display: flex;        /* ADD THIS */
+            align-items: center;  /* ADD THIS */
+        }
+
+        .nav-links a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* Google Translate Widget */
+        .goog-te-gadget-simple {
+            color: #d4af37;
+            font-size: 14px;
+            padding: 8px 15px;
+            border: 1px solid #d4af37;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background-color: transparent;
+            font-family: 'Georgia', serif;
+            display: inline-block;    /* ADD THIS LINE */
+            vertical-align: middle;    /* ADD THIS LINE */
+        }
+
+        .goog-te-gadget-simple:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .goog-te-gadget-simple:before {
+            content: "EN / NO";
+        }
+
+        .goog-te-gadget-simple span {
+            display: none !important;
+        }
+
+        .goog-te-gadget-simple img {
+            display: none !important;
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 40px;
+        }
+
+        .hero-text {
+            max-width: 900px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            color: #d4af37;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 1.5rem;
+            color: #d4af37;
+            font-weight: normal;
+        }
+
+        /* Sections */
+        .projects-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .projects-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 60px;
+            font-weight: normal;
+        }
+
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        @media (min-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            height: 200px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .project-image iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-title-container {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            color: #2d5016;
+            margin-bottom: 8px;
+            font-weight: normal;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.9rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card.expanded .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .project-description {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .project-card.expanded .project-description {
+            max-height: 2000px;
+        }
+
+        .project-description p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .project-description a {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-description a:hover {
+            color: #d4af37;
+        }
+
+        .project-description ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .project-description li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Underline links */
+        .underline-link {
+            color: #2d5016;
+            text-decoration: underline;
+            /* font-weight: bold; */
+            transition: color 0.3s;
+        }
+
+        .underline-link:hover {
+            color: #d4af37;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 80px 40px;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* How it Works Section */
+        .how-it-works-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .how-it-works-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .how-it-works-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .how-it-works-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .how-it-works-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .how-it-works-card a {
+            color: #2d5016;
+            text-decoration: none;
+        }
+
+        .how-it-works-card a:hover {
+            color: #d4af37;
+        }
+
+        /* Partners Section */
+        .funding-section {
+            background: white;
+            padding: 60px 40px;
+        }
+
+        .funding-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .funding-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .funding-logo {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
             cursor: pointer;
         }
 
-        .navbar-toggle div {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            margin: 4px 0;
+        .funding-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
 
-        /* For Larger Screens */
-        @media (min-width: 1000000px) {   /* 768px */
-            .navbar-menu {
-                display: flex;
-                flex-direction: row;
-                position: static;
-                border: none;
-                box-shadow: none;
+        /* Offices Section */
+        .offices-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .offices-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            align-items: center;
+        }
+
+        .offices-text h3 {
+            font-size: 1.8rem;
+            color: #2d5016;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .offices-text p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .offices-map iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .offices-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: white;
+            padding: 80px 40px;
+        }
+
+        .newsletter-frame {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vid-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .newsletter-container {
+            background: #f5f2e8;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .newsletter-content h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #2d5016;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-input {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .submit-btn {
+            background: #2d5016;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Georgia', serif;
+        }
+
+        .submit-btn:hover {
+            background: #d4af37;
+        }
+
+        /* News Section */
+        .privacy-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+            min-height: 60vh;
+        }
+
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .privacy-content {
+            padding: 60px;
+        }
+
+        .privacy-content h2 {
+            font-size: 2.5rem;
+            color: #2d5016;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .effective-date {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .policy-section {
+            margin-bottom: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .policy-section:last-child {
+            border-bottom: none;
+        }
+
+        .policy-section h3 {
+            font-size: 1.3rem;
+            color: #2d5016;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .policy-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .policy-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .policy-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #d4af37;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .policy-list li a {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .policy-list li a:hover {
+            color: #d4af37;
+        }
+
+        .news-date {
+            display: block;
+            font-size: 0.95rem;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .news-speaker {
+            display: block;
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+            margin-top: 3px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d5016;
+            color: white;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-nav {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+            color: #d4af37;
+        }
+
+        .footer-bottom a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2d5016;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s, background 0.3s;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-to-top:hover {
+            background: #d4af37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.2rem;
             }
 
-            .navbar-menu a {
-                border: none;
+            .nav {
+                flex-direction: column;
+                gap: 20px;
             }
 
-            .navbar-toggle {
-                display: none; /* Hide hamburger on large screens */
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .projects-grid,
+            .how-it-works-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-container {
+                padding: 30px;
+            }
+
+            .privacy-content {
+                padding: 40px 30px;
+            }
+
+            .privacy-content h2 {
+                font-size: 2rem;
             }
         }
     </style>
-    <!-- Navbar Section -->
-    <section class="navbar" id="menu1-h">
-            <!-- Logo and Title -->
-            <a href="https://nsnct.org" class="navbar-brand">
-                <span class="navbar-logo">
-                    <img src="nsnct_logo.png" alt="NSNCT">
-                </span>&nbsp;&nbsp;
-                <span class="navbar-brand">Norwegian Society for Neutron Capture Therapy
-                </span>
-            </a>
-            <!-- Hamburger Menu -->
-            <div class="navbar-toggle" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <img src="nsnct_logo_light.png" alt="NSNCT Logo">
+                    </div>
+                    <span>Norwegian Society for Neutron Capture Therapy</span>
+                </a>
             </div>
-            <!-- Dropdown Menu -->
-            <div class="navbar-menu" id="navbarMenu">
-                <a href="index.html#content4-1b">News</a>
-                <a href="index.html#content4-1d">What is Neutron Capture Therapy</a>
-                <a href="index.html#content4-1e">About NSNCT</a>
-                <a href="index.html#content4-1f">Related Associations</a>
-                <a href="index.html#content4-1g">Membership</a>
-                <a href="index.html#content4-1h">Contact</a>
-                <a href="index.html#tabs1-y">Summary</a>
-            </div>
-    </section>
-
-    <!-- JavaScript for Hamburger Menu -->
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("navbarMenu");
-            menu.classList.toggle("active");
-        }
-    </script>
-
-<!--translation drop down-->   
-<div id="google_translate_element" style="text-align: right;"></div>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,no,ja', // Only English and Norwegian
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
-
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
-
-
-<section class="content14 cid-tYaZJH5Biq" id="content14-1k">
-   
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                    <span style="position: relative; top: 5px;"><h3 class="mbr-section-title mbr-fonts-style mb-4 display-7">
-                        <strong>News&nbsp;Repository</strong></h3></span>
-                <ul class="list mbr-fonts-style display-4">
-                    <li><a href="https://ptcog63.org/" class="text-primary" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a><br>Date: 02-07 June 2025<br>Buenos Aires, Argentina</li>
-                    <li><a href="https://www.heron-neutron.com/en/" class="text-primary" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system
-and collaborated with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers</a><br>News Published: Nov 2024</li>
-                    <li><a href="https://euroboron10.eu/" class="text-primary" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a><br>Date: 06 -10 July 2025<br>Łódź, Poland</li>
-                    <li><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" class="text-primary" target="_blank">Webinar of the ISNCT:</a><br><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" class="text-primary" target="_blank">Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan</a><br>Speaker: Prof. Keiji Nihei<br>Date: 13 Dec 2024</li>
-                    <li><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" class="text-primary" target="_blank">Webinar of the ISNCT:</a><br><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" class="text-primary" target="_blank">The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?</a><br>Speaker: Prof. Akira Matsumura<br>Date: 04 Oct 2024</li><li><a href="https://icnct20.org/" class="text-primary" target="_blank">20th International Congress on Neutron Capture Therapy</a><br>24-28 June 2024<br>Kraków, Poland</li>
-                    <li><a href="https://isnct.net/blog/2024/02/23/2nd-webinar-of-the-isnct-ignacio-porras/" class="text-primary" target="_blank">Webinar of ISNCT: <br>Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer</a><br>Speaker: Ignacio Porras (Atomic, Molecular and Nuclear Physics at the University of Granada, Spain)<br>Date: 08 March 2024</li><li>Project "<a href="https://app.cristin.no/projects/show.jsf?id=2673904" class="text-primary" target="_blank">Advancing BNCT: Innovations in Boron Compound Enhancement, Drug Delivery, and Theranostics</a>" is funded by UH-nett Vest (College Network in Western Norway) with participation from HVL, UiS, UiB, Haukeland University Hospital, Norwegian Society for Neutron Capture Therapy, and Bergen Monte Carlo Hub.&nbsp;<br>December 2023</li><li><a href="https://isnct.net/blog/2023/11/27/1st-webinar-of-the-isnct-naonori-hu/" class="text-primary" target="_blank">Webinar of ISNCT:&nbsp;<br>Personal experience during the clinical commissioning of a BNCT facility and future prospects</a><br>Speaker: Naonori Hu (Medical Physicist, University Lecturer, Kansai BNCT Medical Center, Japan)<br>Date: 01 December 2023</li>
-                    <li><a href="https://ptcog-ao2023.org/" class="text-primary" target="_blank">Asia-Oceania Particle Therapy Co-Operative Group (PTCOG-AO) Conference and International Summit of Taiwan's Particle Therapy (ISTPT)</a><br>24-26 November 2023<br>Taiwan</li>
-                    <li>Book: “<a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" class="text-primary" target="_blank">Advances in Boron Neutron Capture Therapy</a>”<br>published by the International Atomic Energy Agency (IAEA)</li>
-                </ul>
+            <ul class="nav-links">
+                <!--<li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#how-it-works">How NCT Works</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>-->
+                <li><div id="google_translate_element"></div></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Advancing neutron capture therapy<br>towards better lives.</h1>
+                <!--<p></p>-->
             </div>
         </div>
-    </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/r" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  </body>
+    </header>
+
+    <!-- News Content Section -->
+    <section class="privacy-section">
+        <div class="privacy-container">
+            <div class="privacy-content">
+                <h2>News Repository</h2>
+                <p class="intro-text">Collection of current and previous activities and news related to Neutron Capture Therapy</p>
+                
+                <div class="policy-section">
+                    <h3>Upcoming Conferences & Events</h3>
+                    <ul class="policy-list">
+                        <li>
+                            <a href="https://isnct.net/blog/2024/11/15/icnct-21-argentina/" target="_blank">The 21st International Congress on Neutron Capture Therapy (ICNCT-21)</a> will be held in National University of San Martín, Buenos Aires, Argentina.
+                            <span class="news-date">Date: 25–30 October 2026 | Buenos Aires, Argentina</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Developments</h3>
+                    <ul class="policy-list">
+                        <li>
+                            <a href="https://www.heron-neutron.com/en/" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system</a> and collaborated with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers
+                            <span class="news-date">News Published: November 2024</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>ISNCT Webinars</h3>
+                    <ul class="policy-list">
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=54976c3b39" target="_blank">Building BNCT</a>
+                            <span class="news-speaker">Speaker: Prof. Silva Bortolussi</span>
+                            <span class="news-date">Date: 5 September 2025 | Online</span>
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=635f7423a5" target="_blank">BNCT for Three-Dimensional Oral Cancer Model</a>
+                            <span class="news-speaker">Speaker: Prof. Kazuyo Igawa</span>
+                            <span class="news-date">Date: 9 May 2025 | Online</span>
+                        </li>
+
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=ed6db35f22" target="_blank">Proton and high-LET radiobiology research at the RadNet Birmingham Centre</a>
+                            <span class="news-speaker">Speaker: Prof. Jason Parsons</span>
+                            <span class="news-date">Date: 21 March 2025 | Online</span>
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan</a>
+                            <span class="news-speaker">Speaker: Prof. Keiji Nihei</span>
+                            <span class="news-date">Date: 13 December 2024 | Online</span>
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?</a>
+                            <span class="news-speaker">Speaker: Prof. Akira Matsumura</span>
+                            <span class="news-date">Date: 04 October 2024 | Online</span>
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=94faa22fcf" target="_blank">Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer</a>
+                            <span class="news-speaker">Speaker: Prof. Ignacio Porras (University of Granada, Spain)</span>
+                            <span class="news-date">Date: 08 March 2024 | Online</span>
+                        </li>                
+                        <li>
+                            <a href="https://isnct.net/blog/2023/11/27/1st-webinar-of-the-isnct-naonori-hu/" target="_blank">Personal experience during the clinical commissioning of a BNCT facility and future prospects</a>
+                            <span class="news-speaker">Speaker: Dr. Naonori Hu (Kansai BNCT Medical Center, Japan)</span>
+                            <span class="news-date">Date: 01 December 2023 | Online</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Conferences & Events</h3>
+                    <ul class="policy-list">
+                        <li>
+                            Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine
+                            <span class="news-date">Date: 14-15 August 2025 | University of Bergen & Haukeland Hospital</span>
+                        </li>
+                        <li>
+                            <a href="https://in-tex.co.jp/jsnct21/" target="_blank">21st Congress on Neutron Capture Therapy of Japanese Society of Neutron Capture Therapy (JSNCT)</a>
+                            <span class="news-date">Date: 25-26 July 2025 | Nagasaki University</span>
+                        </li>
+                        <li>
+                            <a href="https://www.euroboron10.eu" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a>
+                            <span class="news-date">Date: 06-10 July 2025 | Łódź, Poland</span>
+                        </li>
+                        <li>
+                            <a href="https://ptcog63.org/" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a>
+                            <span class="news-date">Date: 02-07 June 2025 | Buenos Aires, Argentina</span>
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=2c2f7a72b3" target="_blank">BNCT Drug Development Update</a>
+                            <span class="news-speaker">Speakers: Dave Greenwald (Aviko Radiopharmaceuticals), Kido Takahiro (Stella Pharma), and Kendall Morrison (TAE Life Sciences)</span>
+                            <span class="news-date">Date: 4 March 2025 | Online</span>
+                        </li>
+                        <li>
+                            <a href="https://icnct20.org/" target="_blank">20th International Congress on Neutron Capture Therapy</a>
+                            <span class="news-date">Date: 24-28 June 2024 | Kraków, Poland</span>
+                        </li>
+                        <li>
+                            <a href="https://ptcog-ao2023.org/" target="_blank">Asia-Oceania Particle Therapy Co-Operative Group (PTCOG-AO) Conference and International Summit of Taiwan's Particle Therapy (ISTPT)</a>
+                            <span class="news-date">Date: 24-26 November 2023 | Taiwan</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Projects</h3>
+                    <ul class="policy-list">
+                        <li>
+                            Project "<a href="https://nva.sikt.no/projects/2673904" target="_blank">Advancing BNCT: Innovations in Boron Compound Enhancement, Drug Delivery, and Theranostics</a>" is funded by UH-nett Vest (College Network in Western Norway) with participation from HVL, UiS, UiB, Haukeland University Hospital, and Norwegian Society for Neutron Capture Therapy.
+                            <span class="news-date">December 2023</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Publications & Resources</h3>
+                    <ul class="policy-list">
+                        <li>
+                            Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" target="_blank">"Advances in Boron Neutron Capture Therapy"</a>
+                            <span class="news-date">Published by the International Atomic Energy Agency (IAEA)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Additional Resources</h3>
+                    <ul class="policy-list">
+                        <li>
+                            <a href="https://www.youtube.com/@isnct5685" target="_blank">ISNCT YouTube Channel</a> - Watch presentations and interviews
+                        </li>
+                        <li>
+                            <a href="https://isnct.net/" target="_blank">International Society for Neutron Capture Therapy (ISNCT)</a> - Comprehensive news and updates
+                        </li>
+                        <li>
+                            <a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">ISNCT News & Webinar Archives</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="https://nsnct.org/">NSNCT Home Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© Norwegian Society for Neutron Capture Therapy (NSNCT) 2025</p>
+            <p>c/o Prof. Magne O. Sydnes</p>
+            <p>Allégaten 41, 5007 Bergen, Norway</p>
+            <p>Email: <a href="mailto:post@nsnct.org">post@nsnct.org</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">^</button>
+    
+    <script>
+        function toggleDropdown(titleContainer) {
+            const card = titleContainer.closest('.project-card');
+            card.classList.toggle('expanded');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-links a, .footer-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                // Only handle smooth scroll for in-page links
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            header.style.transform = `translateY(${rate}px)`;
+        });
+
+        // Form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            const inputs = this.querySelectorAll('.form-input');
+            let allFilled = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allFilled = false;
+                    input.style.borderColor = '#ff6b6b';
+                } else {
+                    input.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!allFilled) {
+                e.preventDefault();
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Scroll to Top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const scrollBtn = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
 </html>

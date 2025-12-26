@@ -1,802 +1,1407 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, 六四天安門, 64天安門">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="assets/images/index-meta.png">
-  <meta property="og:image" content="assets/images/index-meta.png">
-  <meta name="twitter:title" content="Norwegian Society for Neutron Capture Therapy (NSNCT)">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/nsnct-logo-128x128.png" type="image/x-icon">
-  <meta name="description" content="The Norwegian Society for Neutron Capture Therapy (NSNCT) (Norsk Forening for Nøytroninnfangingsterapi) helps develop Neutron Capture Therapy as a cancer treatment procedure and a tool for managing specific diseases. NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.">
-  
-  
-  <title>Norwegian Society for Neutron Capture Therapy (NSNCT); Norsk Forening for Nøytroninnfangingsterapi</title>
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
-  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
-  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  <!--style for translation dropdown-->
-  <style>
-    /* Change dropdown text appearance */
-    .goog-te-gadget-simple {
-      background-color: #f8f9fa; /* Light gray background */
-      border: 1px solid #eee; /* Border for better visibility */
-      /*padding: 10px 10px;  Increased padding for a larger button */
-      padding: 5px; 
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px; /* Slightly rounded edges for a better appearance */
-      display: flex; /* Use flexbox to align items */
-      align-items: center; /* Vertically align items */
-      gap: 8px; /* Space between text and logo */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Norwegian Society for Neutron Capture Therapy (NSNCT) (Norsk Forening for Nøytroninnfangingsterapi) helps develop Neutron Capture Therapy as a cancer treatment procedure and a tool for managing specific diseases. NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.">
+    <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, neutron capture therapy, cancer treatment, boron neutron capture therapy">
+    <title>Norwegian Society for Neutron Capture Therapy (NSNCT)</title>
+    <link rel="icon" type="image/png" href="nsnct-logo-128x128.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,no',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
     }
-    
-    .goog-te-gadget-simple:before {
-      content: "EN / NO / JP"; /* Custom dropdown text */
-    }
+    </script>
 
-    /* Hide the default "Select Language" text */
-    .goog-te-gadget-simple span {
-      display: none !important;
-    }
-
-    .goog-te-gadget-simple img {
-    display: none !important;
-    }
-  </style>  
-  <!--style: lines extending to the width of the page and a word breaking in the middle-->
-  <style>
-        .line-break-container { 
-            display: flex;
-            align-items: center; 
-            width: 100%;
-        }
-        .line {
-            flex-grow: 1;
-            height: 1px;
-            background-color: black;
-        }
-        .center-text {
-            margin: 0 10px; 
-            /* margin-right: 10px; Space between the text and the line */
-            font-family: Garamond;
-            /*font-family: Libre Franklin;  Matches the style of the text */
-            font-weight: 700; /* 100 -- 900, 400 is normal */
-            text-transform: uppercase;
-            letter-spacing: 2px; /* Adjust spacing for aesthetics */
-            background-color: #dbf0fa;   
-            text-align: left;
-            padding: 5px; /* Adds padding on all sides */
-        }
-        .line:first-child {
-        flex-grow: 0.05; /* Prevent the left line from stretching */
-        }
-  </style> 
-  <!--end of style of lines extending to the width of the page and a word breaking in the middle--> 
-</head>
-<!-----------------------body-------------------------->
-<body>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Navbar Styles */
-        .navbar {
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('trolltunga_ycc.JPG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #fff; /* Background color */
-            padding: 10px 20px;
-            border-bottom: 1px solid #fff; /* Light border */
-            flex-wrap: wrap; /* Allow wrapping */
-        }
-
-        /* Logo and Title Container */
-        .navbar-brand {
-            display: flex;
-            flex-wrap: wrap;  /*Allow wrapping of brand name */
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            font-family: 'Roboto', Arial, sans-serif;
-            font-size: 1.2rem;
-            /*font-weight: bold;*/
-            max-width: 100%; /* Prevent overflow */
-        }
-
-        .navbar-logo img {
-            height: 5.5rem; /* Adjust image height */
-            width: auto; /* Automatically adjust the width to maintain aspect ratio */
-            margin-right: 10px;
-        }
-
-        .navbar-brand span {
-            white-space: normal; /* Allow text to wrap */
-        }
-
-        /* Menu Items */
-        .navbar-menu {
-            display: none; /* Hidden by default for small screens */
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            position: relative;
             z-index: 10;
         }
 
-        .navbar-menu.active {
-            display: flex; /* Display menu when active */
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
         }
 
-        .navbar-menu a {
+        .logo-link {
             text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            border-bottom: 1px solid #f0f0f0;
-            transition: background-color 0.3s;
+            color: inherit;
+            display: flex;
+            align-items: center;
         }
 
-        .navbar-menu a:hover {
-            background-color: #f8f8f8;
+        .logo-link:hover {
+            color: #d4af37;
         }
 
-        /* Hamburger Icon */
-        .navbar-toggle {
-            display: block;
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;  /* ADD THIS LINE */
+        }
+
+        .nav-links li {
+            display: flex;        /* ADD THIS */
+            align-items: center;  /* ADD THIS */
+        }
+
+        .nav-links a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* Google Translate Widget */
+        .goog-te-gadget-simple {
+            color: #d4af37;
+            font-size: 14px;
+            padding: 8px 15px;
+            border: 1px solid #d4af37;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background-color: transparent;
+            font-family: 'Georgia', serif;
+            display: inline-block;    /* ADD THIS LINE */
+            vertical-align: middle;    /* ADD THIS LINE */
+        }
+
+        .goog-te-gadget-simple:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .goog-te-gadget-simple:before {
+            content: "EN / NO";
+        }
+
+        .goog-te-gadget-simple span {
+            display: none !important;
+        }
+
+        .goog-te-gadget-simple img {
+            display: none !important;
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 40px;
+        }
+
+        .hero-text {
+            max-width: 900px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            color: #d4af37;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 1.5rem;
+            color: #d4af37;
+            font-weight: normal;
+        }
+
+        /* Sections */
+        .projects-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .projects-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 60px;
+            font-weight: normal;
+        }
+
+        .projects-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        @media (min-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            height: 200px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .project-image iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-title-container {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            color: #2d5016;
+            margin-bottom: 8px;
+            font-weight: normal;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.9rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card.expanded .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .project-description {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .project-card.expanded .project-description {
+            max-height: 2000px;
+        }
+
+        .project-description p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .project-description a {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-description a:hover {
+            color: #d4af37;
+        }
+
+        .project-description ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .project-description li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Underline links */
+        .underline-link {
+            color: #2d5016;
+            text-decoration: underline;
+            /* font-weight: bold; */
+            transition: color 0.3s;
+        }
+
+        .underline-link:hover {
+            color: #d4af37;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 80px 40px;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* How it Works Section */
+        .how-it-works-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .how-it-works-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .how-it-works-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .how-it-works-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .how-it-works-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .how-it-works-card a {
+            color: #2d5016;
+            text-decoration: none;
+        }
+
+        .how-it-works-card a:hover {
+            color: #d4af37;
+        }
+
+        /* Partners Section */
+        .funding-section {
+            background: white;
+            padding: 60px 40px;
+        }
+
+        .funding-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .funding-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .funding-logo {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
             cursor: pointer;
         }
 
-        .navbar-toggle div {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            margin: 4px 0;
+        .funding-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
 
-        /* For Larger Screens */
-        @media (min-width: 1000000px) {   /* 768px */
-            .navbar-menu {
-                display: flex;
-                flex-direction: row;
-                position: static;
-                border: none;
-                box-shadow: none;
+        /* Offices Section */
+        .offices-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+        }
+
+        .offices-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            align-items: center;
+        }
+
+        .offices-text h3 {
+            font-size: 1.8rem;
+            color: #2d5016;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .offices-text p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .offices-map iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .offices-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: white;
+            padding: 80px 40px;
+        }
+
+        .newsletter-frame {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vid-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .newsletter-container {
+            background: #f5f2e8;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .newsletter-content h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #2d5016;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-input {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .submit-btn {
+            background: #2d5016;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Georgia', serif;
+        }
+
+        .submit-btn:hover {
+            background: #d4af37;
+        }
+
+        /* News Section */
+        .privacy-section {
+            background: #f5f2e8;
+            padding: 80px 40px;
+            min-height: 60vh;
+        }
+
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .privacy-content {
+            padding: 60px;
+        }
+
+        .privacy-content h2 {
+            font-size: 2.5rem;
+            color: #2d5016;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .effective-date {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .policy-section {
+            margin-bottom: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .policy-section:last-child {
+            border-bottom: none;
+        }
+
+        .policy-section h3 {
+            font-size: 1.3rem;
+            color: #2d5016;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .policy-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .policy-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .policy-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #d4af37;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .policy-list li a {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .policy-list li a:hover {
+            color: #d4af37;
+        }
+
+        .news-date {
+            display: block;
+            font-size: 0.95rem;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .news-speaker {
+            display: block;
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+            margin-top: 3px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d5016;
+            color: white;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-nav {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+            color: #d4af37;
+        }
+
+        .footer-bottom a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2d5016;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s, background 0.3s;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-to-top:hover {
+            background: #d4af37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.2rem;
             }
 
-            .navbar-menu a {
-                border: none;
+            .nav {
+                flex-direction: column;
+                gap: 20px;
             }
 
-            .navbar-toggle {
-                display: none; /* Hide hamburger on large screens */
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .projects-grid,
+            .how-it-works-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-container {
+                padding: 30px;
+            }
+
+            .privacy-content {
+                padding: 40px 30px;
+            }
+
+            .privacy-content h2 {
+                font-size: 2rem;
             }
         }
     </style>
-    <!-- Navbar Section -->
-    <section class="navbar" id="menu1-h">
-            <!-- Logo and Title -->
-            <a href="https://nsnct.org" class="navbar-brand">
-                <span class="navbar-logo">
-                    <img src="nsnct_logo.png" alt="Norwegian Society for Neutron Capture Therapy; NSNCT; Norsk Forening for Nøytroninnfangingsterapi">
-                </span>&nbsp;&nbsp;
-                <span class="navbar-brand">Norwegian Society for Neutron Capture Therapy
-                </span>
-            </a>
-            <!-- Hamburger Menu -->
-            <div class="navbar-toggle" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <img src="nsnct_logo_light.png" alt="NSNCT Logo">
+                    </div>
+                    <span>Norwegian Society for Neutron Capture Therapy</span>
+                </a>
             </div>
-            <!-- Dropdown Menu -->
-            <div class="navbar-menu" id="navbarMenu">
-                <a href="index.html#content4-1b">News</a>
-                <a href="index.html#content4-1d">What is Neutron Capture Therapy</a>
-                <a href="index.html#content4-1e">About NSNCT</a>
-                <a href="index.html#content4-1f">Related Associations</a>
-                <a href="index.html#content4-1g">Membership</a>
-                <a href="index.html#content4-1h">Contact</a>
-                <a href="index.html#tabs1-y">Summary</a>
-            </div>
-    </section>
-
-    <!-- JavaScript for Hamburger Menu -->
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("navbarMenu");
-            menu.classList.toggle("active");
-        }
-    </script>    
-<!--translation dropdown-->   
-<div id="google_translate_element" style="text-align: right;"></div>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,no,ja', // Only English and Norwegian
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
-
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-<section class="content4 cid-tYb2v7BZch" id="content4-1b"> <!--create vertical space-->
-<br>
-</section>
-<span style="position: relative; top: 0px;">
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">News</span>
-            <span class="line"></span>
-        </div>
-</span>    
-<!-- Grid Section, good to keep -->
-<style>
-        .grid-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background: white;
-        }
-        .grid-blue-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background: #f7f8fc;
-        }
-        .grid-green-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background: #e8efde;
-        }
-        .grid-grey-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background: #b1c9d6;
-        }
-        .separator {
-            line-height: 1.6;
-            background-color: white;
-            color: #333;
-        }
-        .grid-green-item {
-            display: flex;
-            justify-content: flex-start; /* Aligns content to the top */
-            align-items: center;    /*  Centers vertically */
-            flex-direction: column;  /* Keeps text below the image */
-            padding: 15px;
-/*            background: #f9f9f9; */
-            background: #e8efde; /* green */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-        }
-        .grid-blue-item {
-            display: flex;
-            justify-content: flex-start; /* Aligns content to the top */
-            align-items: center;    /*  Centers vertically */
-            flex-direction: column;  /* Keeps text below the image */
-            padding: 15px;
-            background: #f7f8fc;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-        }
-        .grid-white-item {
-            display: flex;
-            justify-content: flex-start; /* Aligns content to the top */
-            align-items: center;    /*  Centers vertically */
-            flex-direction: column;  /* Keeps text below the image */
-            padding: 15px;
-            background: white; 
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-        }
-        .grid-green-item img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 4px; 
-        }
-        .grid-green-item iframe {
-        max-width: 100%;
-        height: auto;  /* Changed from auto to 100% */
-        aspect-ratio: 1 / 1; /* This makes the height equal to the width */
-        margin-bottom: 10px;
-        border-radius: 4px;
-        }
-        .grid-green-item h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-        }        
-        .grid-green-item a {
-            text-decoration: none;
-            color: #6592e6 /* #0078d4; */
-            font-size: 16px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .grid-green-item p {
-            font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6; /* Line spacing for paragraphs */
-            color: #333; /* Optional: sets a dark gray color for readability */
-        }
-        .grid-blue-item img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 4px; 
-        }
-        .grid-blue-item h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-        }        
-        .grid-blue-item a {
-            text-decoration: none;
-            color: #6592e6 /* #0078d4; */
-            font-size: 16px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .grid-blue-item p {
-            font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6; /* Line spacing for paragraphs */
-            color: #333; /* Optional: sets a dark gray color for readability */
-        }
-        .grid-white-item img {
-            max-width: 80%;
-            height: auto;
-            margin: 0 auto 10px auto; /* Automatically centers the image horizontally */
-            border-radius: 4px; 
-            display: block; /* Ensures the image is treated as a block element */
-        }        
-        .grid-white-item a {
-            text-decoration: none;
-            color: #6592e6 /* #0078d4; */
-            font-size: 16px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .grid-white-item p {
-            font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            line-height: 1.6; /* Line spacing for paragraphs */
-            color: #333; /* Optional: sets a dark gray color for readability */
-        }       
-</style>
-    <section class="grid-section">
-        
-        <div class="grid-green-item">
-            <img src="euroboron10.png" alt="10th European Conference on Boron Chemistry">
-            <p><a href="https://www.euroboron10.eu" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a>
-                            <br>06-10 July 2025<br> Łódź, Poland</p>
-        </div>
-        <div class="grid-green-item">
-            <img src="PTCOG63.png" alt="PTCOG 63 in Buenos Aires, 2025”">
-            <p><a href="https://ptcog63.org/" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a>
-                            <br>02-07 June 2025 <br>Buenos Aires, Argentina</p>
-        </div>
-        <div class="grid-green-item">
-            <img src="ISNCT_webinar2024December13_Keiji Nihei.png" alt="Webinar of the ISNCT-Prof. Keiji Nihei">
-            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">"Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan"<br>by Prof. Keiji Nihei, MD, PhD</a>
-                            <br>13 Dec 2024<br>Online</p>
-        </div>
-        <div class="grid-green-item">
-            <img src="akira-matsumura.png" alt="Webinar of the ISNCT–Prof. Akira Matsumura">
-            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">"The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?"<br>by Prof. Akira Matsumura, MD, PhD</a>
-                            <br>04 Oct 2024<br>Online</p>
-        </div>
-   <!-- </section>-->
-   <!-- <section class="grid-section">-->
-        
-        <div class="grid-green-item">
-            <img src="Heron AB-BNCT.png" alt="Heron AB-BNCT">
-            <p><a href="https://www.heron-neutron.com/en/" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system</a>
-                            <br>and collaborate with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers (ref <a href="https://www.taiwan-healthcare.org/en/news-detail?id=0smrg9mgifi1bmu1" target="_blank">1</a>, <a href="https://www.taiwan-healthcare.org/zh/news-detail?id=0srnfgdra4f0fw15" target="_blank">2</a>)<br>Nov 2024</p>
-        </div>
-        <div class="grid-green-item">
-            <iframe src="https://www.youtube-nocookie.com/embed/p356p_8CoEw?si=QRke6r_N8Zgm_y3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=94faa22fcf" target="_blank">"Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer"<br>by Prof. Ignacio Porras</a>
-                            <br>08 Mar 2024<br>Online</p>
-        </div>
-        <div class="grid-green-item">
-            <iframe src="https://www.youtube-nocookie.com/embed/S6zP9NILo6g?si=6_BPQbv1cJxi-1Lr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p><a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">Webinar of the ISNCT – <br></a>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=e2d8551230" target="_blank">"Personal experience during the clinical commissioning of a BNCT facility and future prospects"<br>by Dr. Naonori Hu</a>
-                            <br>01 Dec 2023<br>Online</p>
-        </div>
-        <div class="grid-green-item">
-            <img src="advances-in-boron-neutron-capture-therapy.jpg" alt="Book: “Advances in Boron Neutron Capture Therapy”">
-            <p>Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" target="_blank">“Advances in Boron Neutron Capture Therapy”</a>
-                            <br>published by the International Atomic Energy Agency (IAEA)</p>
-        </div>
-    </section>
-<div class="container">    
-<p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 10px; margin-bottom: 40px;">
-  <strong><a href="news.html" class="text-primary" target="_blank">News Repository</a></strong>
-  <br><br>
-  <strong>More presentations and interviews on </strong><a href="https://www.youtube.com/@isnct5685" class="text-primary" target="_blank">ISNCT YouTube channel</a>
-</p>
-</div>
-<section class="content4 cid-tYb2v7BZch" id="content4-1d">
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">How Boron Neutron Capture Therapy Works</span>
-            <span class="line"></span>
-        </div>
-</section>
-<section class="content4 cid-tYb2v7BZch" id="content4-1b">
-<br>  
-</section>
-<section class="grid-green-section">
-        
-        <div class="grid-blue-item">
-            <p><img src="patient_given_a_compound_containing_Boron-10.gif" alt="patient given a compound containing Boron-10"></p>
-            <p>The patient is given a compound containing Boron-10.</p>
-        </div>
-        <div class="grid-blue-item">
-            <p><img src="cancer_cells_absorb_boron-10_compound.gif" alt="cancer cells absorb boron-10 compound"></p>
-            <p>The cancer cells absorb the compound.</p>
-        </div>
-        <div class="grid-blue-item">
-            <p><img src="exposed_to_neutrons.gif" alt="exposed to neutrons"></p>
-            <p>The patient is exposed to a beam of neutrons.  Neutron-boron interaction initiates a nuclear reaction that releases high-energy particles, which travel up to 10 microns.</p>
-        </div>
-        <div class="grid-blue-item">
-            <p><img src="particles_cause_damage_to_the_cancer_cells.gif" alt="particles cause damage to the cancer cells"></p>
-            <p>Subsequently, these particles cause damage to the cancer cells.</p>
-        </div>
-    </section>
-
- 
-<div class="container">    
-<p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 20px; margin-bottom: 60px;">
-  <strong>An article introducing Boron Neutron Capture Therapy on </strong><a href="https://www.tu.no/artikler/noytronstraler-tar-kreften/269168" class="text-primary" target="_blank">Teknisk Ukeblad</a> (in Norwegian)
-</p>
-</div>    
-
-<section class="content4 cid-tYb2v7BZch" id="content4-1e">
-</section>
-<span style="position: relative; top: -20px;">
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">About NSNCT</span>
-            <span class="line"></span>
-        </div>
-</span>
-<section class="content14 cid-tW3NQGDQSB" id="content14-14">
-    
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">
-                    
-                <ul class="list mbr-fonts-style display-4">
-                    <li><strong>Mission</strong><br><br>The Norwegian Society for Neutron Capture Therapy (NSNCT) is a non-profit, multidisciplinary professional association. NSNCT is committed to advancing Neutron Capture Therapy (NCT) both as a cancer treatment procedure and a tool for managing specific diseases.</li>
-                    <li><strong>Purpose and Objectives</strong><br><br>NSNCT's purpose is to help develop NCT in various scientific areas and brings together professionals from different fields. Scientific areas of focus include synthetic and analytical chemistry, neutron source technology, medical physics and biophysics, radiobiology, and clinical applications of NCT.<br><br>NSNCT facilitates disseminating accurate scientific information about NCT, raising awareness of research findings, establishing connections with other professional societies and relevant international organisations, and undertaking other initiatives as deemed appropriate to advance the field.&nbsp;</li>
-                    <li><strong>Global Collaboration and Networking</strong><br><br>NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.<br><br>NSNCT is an associated organisation of the International Society for Neutron Capture Therapy (<strong><a href="https://isnct.net/" class="text-primary" target="_blank">ISNCT</a></strong>).<br><br>NSNCT is a parallel organisation to other national societies for neutron capture therapy (SNCT), including <a href="http://www.jsnct.jp/e/" class="text-primary">JSNCT</a> (Japan), <a href="https://tsnct.org.tw/eng/" class="text-primary">TSNCT</a> (Taiwan), and German Society of Boron Neutron Capture Therapy (<a href="https://dgbnct.com/" class="text-primary">DGBNCT</a>).<br><br>NSNCT aims to establish connections with other professional societies and relevant international organisations to enhance collaboration and knowledge-sharing.</li>
-                    <li><strong>Initiatives<br></strong><br>NSNCT undertakes various initiatives as deemed appropriate to advance the field of NCT. These initiatives may include organising events, conferences, and activities that contribute to the growth and development of NCT.<br><br>NSNCT serves as a hub for professionals involved in NCT, promoting collaboration, disseminating information, and contributing to the advancement of Neutron Capture Therapy in the global scientific community.</li>
-                </ul>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#how-it-works">How NCT Works</a></li>
+                <!--<li><a href="#partners">Partners</a></li>-->
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<li><span class="language-toggle">EN / NO</span></li>-->
+                <li><div id="google_translate_element"></div></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Advancing neutron capture therapy<br>towards better lives.</h1>
+                <!--<p></p>-->
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<style> /* box style for related associations */
-         /* General box styling */
-        .item-wrapper {
-            border: 1px solid #c8c8c8 /* black;  Black border */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-            border-radius: 8px; /* Rounded corners */
-            overflow: hidden; /* Keeps content inside rounded corners */
-            background-color: #fff; /* White background */
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box; /* Ensures padding doesn't affect box size */
-            height: 100%; /* Equal height for all boxes */
-        }
-        .item-img img {
-            width: 100%;
-            object-fit: contain; /* Ensures images are well-fitted */
-            display: block;
-        }
-
-        .item-content {
-            padding:  8px 12px;
-            flex-grow: 1; /* Ensures text area expands to fill space */
-            text-align: center; /* Center aligns text */
-            font-size: 14px; /* Slightly smaller font size */
-        }
-
-        /* Container row alignment */
-        .row {
-            display: flex;
-            flex-wrap: nowrap; /* Prevents wrapping to new rows */
-            justify-content: space-between; /* Equal spacing between boxes */
-            gap: 10px; /* Adds spacing between boxes */
-        }
-
-        .features-image {
-            flex-basis: 25.00%; /* Forces equal boxes per row */
-            display: flex;
-        } 
-
-</style>
-<section class="content4 cid-tYb2v7BZch" id="content4-1f" style="padding: 10px 0">
-</section>
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">Related Associations</span>
-            <span class="line"></span>
-        </div>
-<section class="content4 cid-tYb2v7BZch" style="padding: 10px 0">
-</section>
-<section class="grid-grey-section">      
-        <div class="grid-white-item">
-            <img src="ISNCT_Logo.png" alt="ISNCT">
-            <p>International Society for Neutron Capture Therapy (<a href="https://isnct.net/" target="_blank">ISNCT</a>)</p>
-        </div>
-        <div class="grid-white-item">
-            <img src="jsnct_logo.png" alt="JSNCT">
-            <p>Japanese Society of Neutron Capture Therapy (<a href="http://www.jsnct.jp/e/" target="_blank">JSNCT</a>)</p>
-        </div>
-        <div class="grid-white-item">
-            <img src="tsnct_logo.png" alt="TSNCT">
-            <p>Taiwan Society of Neutron Capture Therapy (<a href="https://tsnct.org.tw/eng/" target="_blank">TSNCT</a>)</p>
-        </div>
-        <div class="grid-white-item">
-            <br><br>
-            <img src="dgbnct_logo.png" alt="DGBNCT">
-            <br>
-            <p>German Society of Boron Neutron Capture Therapy (<a href="https://dgbnct.com/" target="_blank">DGBNCT</a>)</p>
-        </div>
-    </section>
-
-<section class="content4 cid-tYb2v7BZch" id="content4-1g" style="padding: 10px 0">
-</section>
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">NSNCT Membership</span>
-            <span class="line"></span>
-        </div>
-<section class="content4 cid-tYb2v7BZch" id="content4-1g" style="padding: 10px 0">
-</section>
-<section class="content5 cid-tW4VK1fNfw" id="content5-17">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">
-                
-                
-                <p class="mbr-text mbr-fonts-style display-4">NSNCT aims to promote the progress of science by facilitating interactions and cooperation between clinical medicine, radiobiology, physics, engineering, chemistry, and their related fields. If you wish to become a member, please contact the secretariat (e-mail : post@nsnct.org).<br><br><strong>Membership Categories</strong></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="content14 cid-tW4lEyCYHp" id="content14-15">   
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">                    
-                <ul class="list mbr-fonts-style display-4">
-                    <li><strong>Regular Member</strong><br>An individual who conducts research that aligns with the objectives of NSNCT.</li>
-                    <li><strong>Supporting Member&nbsp;</strong><br>An individual or a group that shares the objectives of NSNCT and provides financial support for NSNCT's activities.</li>
-                    <li><strong>Honorary Member</strong><br>An individual who has made distinguished contributions to NSNCT. Honorary membership is recommended by the executive committee of NSNCT and is approved in a general meeting.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="content4 cid-tYb2v7BZch" id="content4-1h" style="padding: 10px 0">
-</section>
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">Get in Touch</span>
-            <span class="line"></span>
-        </div>
-<section class="content4 cid-tYb2v7BZch" id="content4-1l">   
-    <div class="container">    
-    <p style="font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 18px; position: relative; top: 20px; margin-bottom: 20px;">
-    Contact NSNCT Team <a href="https://docs.google.com/forms/d/e/1FAIpQLScZvy3ml92wTmCwSGoMi64hjwevftryx8kmaPnn0CZyrAL4Eg/viewform?usp=pp_url" class="text-primary" target="_blank">here </a>or reach out via <a href="mailto:post@nsnct.org" class="text-primary">email</a>.
-    </p>
-    </div>
-</section>
-
-<section class="content4 cid-tYb2v7BZch" id="content4-1i" style="padding: 10px 0">
-</section>
-    <!-- line-break Section -->
-        <div class="line-break-container">
-            <span class="line"></span>
-            <span class="center-text">Offices</span>
-            <span class="line"></span>
-        </div>
-     <!-- NSNCT offices, google map -->    
-    <style>
-        /* General container styling */
-        .container {
-            display: flex; /* Use flexbox for side-by-side layout */
-            justify-content: space-between; /* Space between text and map */
-            align-items: center; /* Center items vertically */
-            padding: 20px;
-            gap: 20px; /* Space between text and map */
-        }
-
-        /* Left text content styling */
-        .text-content {
-            flex: 1; /* Takes up remaining space */
-            font-family: 'Roboto Condensed', Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.5;
-            color: #333; /* Dark gray text */
-        }
-
-        /* Right map styling */
-        .map-container {
-            flex: 1; /* Takes up half the space */
-        }
-
-        /* Responsive iframe */
-        iframe {
-            width: 100%;
-            height: 320px;
-            border: 0; /* Remove iframe border */
-            border-radius: 8px; /* Optional: rounded corners */
-        }
-
-        /* Responsive for small screens */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stack vertically on smaller screens */
-            }
-        }
-    </style>  
-<div class="container">
-        <!-- Left Text Section -->
-        <div class="text-content">
-            <h5>Reach out to NSNCT in Bergen and Tromsø</h5><br>
-            <p></p>
-            <p>
-                Inndalsveien 28, 5063 Bergen<br><br>
-                Grønnegata, 9008 Tromsø
+    <!-- About NSNCT Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2 class="about-title">About NSNCT</h2>
+            <p class="about-text">
+                The Norwegian Society for Neutron Capture Therapy (NSNCT) (Norsk Forening for Nøytroninnfangingsterapi) helps develop Neutron Capture Therapy as a cancer treatment procedure and a tool for managing specific diseases. NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.
+            </p>
+            <p class="about-text">
+                NSNCT is a non-profit, multidisciplinary professional association committed to advancing Neutron Capture Therapy (NCT) both as a cancer treatment procedure and a tool for managing specific diseases. Our purpose is to help develop NCT in various scientific areas and bring together professionals from different fields.
             </p>
         </div>
+    </section>
 
-        <!-- Right Google Map Section -->
-        <div class="map-container">
-            <!-- Replace the src below with your Google Maps iframe link -->
-            <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1vvc9D5bUmzZurcQgI1v57tR02q6SgYI&ehbc=2E312F&noprof=1" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-</div>
+    <!-- Mission & Objectives Section -->
+    <section class="projects-section">
+        <h2 class="projects-title">Mission & Objectives</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Mission
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>The Norwegian Society for Neutron Capture Therapy (NSNCT) is a non-profit, multidisciplinary professional association. NSNCT is committed to advancing Neutron Capture Therapy (NCT) both as a cancer treatment procedure and a tool for managing specific diseases.</p>
+                    </div>
+                </div>
+            </div>
 
-<section class="tabs content18 cid-tW1WrbRMen" id="tabs1-y">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Purpose and Objectives
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>NSNCT's purpose is to help develop NCT in various scientific areas and brings together professionals from different fields. Scientific areas of focus include:</p>
+                        <ul>
+                            <li>Synthetic and analytical chemistry</li>
+                            <li>Neutron source technology</li>
+                            <li>Medical physics and biophysics</li>
+                            <li>Radiobiology</li>
+                            <li>Clinical applications of NCT</li>
+                        </ul>
+                        <p>NSNCT facilitates disseminating accurate scientific information about NCT, raising awareness of research findings, establishing connections with other professional societies and relevant international organisations, and undertaking other initiatives as deemed appropriate to advance the field.</p>
+                    </div>
+                </div>
+            </div>
 
-    
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Global Collaboration
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>NSNCT fosters communication and collaboration among scientists and individuals worldwide engaged in NCT-related activities.</p>
+                        <p>NSNCT is an associated organisation of the <a href="https://isnct.net/" target="_blank">International Society for Neutron Capture Therapy (ISNCT)</a>.</p>
+                        <p>NSNCT is a parallel organisation to other national societies for neutron capture therapy (SNCT), including <a href="http://www.jsnct.jp/e/" target="_blank">JSNCT</a> (Japan), <a href="https://tsnct.org.tw/eng/" target="_blank">TSNCT</a> (Taiwan), and <a href="https://dgbnct.com/" target="_blank">German Society of Boron Neutron Capture Therapy (DGBNCT)</a>.</p>
+                    </div>
+                </div>
+            </div>
 
-    
-    <div class="container">
-        
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-12">
-                <ul class="nav nav-tabs mb-4" role="tablist">
-                    <li class="nav-item first mbr-fonts-style"><a class="nav-link mbr-fonts-style show active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab0" aria-selected="true">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab1" aria-selected="true">What is NCT</a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab2" aria-selected="true">About NSNCT&nbsp;</a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab3" aria-selected="true">Related Associations</a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab4" aria-selected="true">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" href="#tabs1-y_tab5" aria-selected="true">News in NCT<br></a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab1" class="tab-pane in active" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">Norwegian Society for Neutron Capture Therapy<br><br>c/o yfch@hvl.no (NSNCT secretariat)<br>Western Norway University of Applied Sciences<br>Inndalsveien 28, 5063 Bergen, Norway<br>e-mail : post@nsnct.org<br></p>
-                            </div>
-                        </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Initiatives
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
                     </div>
-                    <div id="tab2" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">
-                                    Neutron capture therapy (NCT) uses neutrons, which are subatomic particles, to target and destroy cancer cells.&nbsp;A patient is given a neutron capture agent which is designed to selectively gather in cancer cells.&nbsp;The patient is then exposed to a beam of neutrons. When the neutrons come into contact with the neutron capture agent in the cancer cells, a nuclear reaction occurs.&nbsp;This nuclear reaction releases energetic particles that travel a distance within 10 microns, which can damage and destroy the cancer cells. Normal, healthy cells are less affected because they don't have as much of the capture agent.&nbsp;The goal of neutron capture therapy is to concentrate the destructive power in the tumour while sparing the surrounding healthy tissue as much as possible. It's a type of targeted therapy, aiming to minimise damage to normal cells and reduce side effects compared to other forms of cancer treatment. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab3" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">
-                                    The Norwegian Society for Neutron Capture Therapy (NSNCT) is a multidisciplinary, non-profit, and professional association dedicated to advancing Neutron Capture Therapy (NCT) as both a cancer treatment procedure and a tool for managing specific diseases.&nbsp;NSNCT's purpose is to help promote and develop NCT in various scientific areas, including synthetic and analytical chemistry, neutron source technology, medical physics and biophysics, radiobiology, and the clinical applications of NCT. NSNCT actively fosters communication and collaboration among scientists and individuals worldwide who are engaged in NCT-related activities. NSNCT also facilitates disseminating accurate scientific information about NCT, raising awareness of research findings, establishing connections with other professional societies and relevant international organisations, and undertaking other initiatives as deemed appropriate to advance the field. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab4" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">International Society for Neutron Capture Therapy (ISNCT)<br>Japanese Society of Neutron Capture Therapy (JSNCT)<br>Taiwan Society of Neutron Capture Therapy (TSNCT)<br>German Society of Boron Neutron Capture Therapy (DGBNCT)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab5" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">
-                                    If you wish to become a member, please contact the secretariat.&nbsp;e-mail : post@nsnct.org</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab6" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text mbr-fonts-style display-4">10th European Conference on Boron Chemistry (Euroboron10). 06-10 July 2025. Łódź, Poland.<br><br>Webinar of the ISNCT – Prof. Akira Matsumura. 04 Oct 2024.<br><br>Webinar of the ISNCT – Prof. Keiji Nihei. 13 Dec 2024.<br><br>Publication of “Advances in Boron Neutron Capture Therapy” by the International Atomic Energy Agency (IAEA) (2023).</p>
-                            </div>
-                        </div>
+                    <div class="project-description">
+                        <p>NSNCT undertakes various initiatives as deemed appropriate to advance the field of NCT. These initiatives may include organising events, conferences, and activities that contribute to the growth and development of NCT.</p>
+                        <p>NSNCT serves as a hub for professionals involved in NCT, promoting collaboration, disseminating information, and contributing to the advancement of Neutron Capture Therapy in the global scientific community.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/q" style="flex: 1 1; height: 0rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/formstyler/jquery.formstyler.js"></script>  <script src="assets/formstyler/jquery.formstyler.min.js"></script>  <script src="assets/datepicker/jquery.datetimepicker.full.js"></script>  <script src="assets/mbr-tabs/mbr-tabs.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>   
-  
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  </body>
+    <!-- News Section -->
+    <section class="projects-section" id="news" style="background: white;">
+        <h2 class="projects-title">News in Neutron Capture Therapy</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="ICNCT_21.jpg" alt="21st International Congress on Neutron Capture Therapy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            21st Int. Congress on Neutron Capture Therapy
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://isnct.net/blog/2024/11/15/icnct-21-argentina/" target="_blank">The 21st International Congress on Neutron Capture Therapy (ICNCT-21) will be held in National University of San Martín, Buenos Aires, Argentina.</a></p>
+                        <p>25–30 October 2026<br>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="ISNCT_webinar_Silva Bortolussi.png" alt="ISNCT webinar - Silva Bortolussi">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Silva Bortolussi
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=54976c3b39" target="_blank">"Building BNCT"</a></p>
+                        <p>by Prof. Silva Bortolussi</p>
+                        <p>5 Sept 2025 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <a href="" target="_blank">
+                    <img src="Chun-Yi_Wu_Magne Sydnes.png" alt="Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="" target="_blank"></a></p>
+                        <p>14-15 Aug 2025 | University of Bergen & Haukeland Hospital</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <a href="https://in-tex.co.jp/jsnct21/" target="_blank">
+                    <img src="jsnct21.png" alt="21st Congress on Neutron Capture Therapy of Japanese Society of Neutron Capture Therapy">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            JSNCT21
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://in-tex.co.jp/jsnct21/" target="_blank">21st Congress on Neutron Capture Therapy of Japanese Society of Neutron Capture Therapy (JSNCT)</a></p>
+                        <p>25-26 July 2025 | Nagasaki University</p>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="euroboron10.png" alt="10th European Conference on Boron Chemistry">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Euroboron10
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://www.euroboron10.eu" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a></p>
+                        <p>06-10 July 2025<br>Łódź, Poland</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="PTCOG63.png" alt="PTCOG 63 in Buenos Aires, 2025">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            PTCOG 63
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://ptcog63.org/" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a></p>
+                        <p>02-07 June 2025<br>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="ISCNT_webinar_Kazuyo_Igawa.png" alt="ISNCT webinar - Kazuyo Igawa">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Kazuyo Igawa
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=635f7423a5" target="_blank">"BNCT for Three-Dimensional Oral Cancer Model"</a></p>
+                        <p>by Prof. Kazuyo Igawa</p>
+                        <p>9 May 2025 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://mcusercontent.com/24744bc99c0bf8b960f093b4b/images/967dac35-4614-aeb2-e3bd-040bebe09738.png" alt="ISNCT webinar - Jason Parsons">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Jason Parsons
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=ed6db35f22" target="_blank">"Proton and high-LET radiobiology research at the RadNet Birmingham Centre"</a></p>
+                        <p>by Prof. Jason Parsons</p>
+                        <p>21 Mar 2025 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://mcusercontent.com/24744bc99c0bf8b960f093b4b/images/c85752eb-d3d8-3f81-1c9d-6d0378a2bb49.png" alt="PTCOG webinar - BNCT Drug Development Update">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            PTCOG Webinar - BNCT Drug Development Update 
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=2c2f7a72b3" target="_blank">"BNCT for Three-Dimensional Oral Cancer Model"</a></p>
+                        <p>by Dave Greenwald from Aviko Radiopharmaceuticals, Kido Takahiro from Stella Pharma, and Kendall Morrison from TAE Life Sciences</p>
+                        <p>4 Mar 2025 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="ISNCT_webinar2024December13_Keiji Nihei.png" alt="Webinar of the ISNCT-Prof. Keiji Nihei">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Keiji Nihei
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">"Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan"</a></p>
+                        <p>by Prof. Keiji Nihei, MD, PhD</p>
+                        <p>13 Dec 2024 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="akira-matsumura.png" alt="Webinar of the ISNCT–Prof. Akira Matsumura">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Akira Matsumura
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">"The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?"</a></p>
+                        <p>by Prof. Akira Matsumura, MD, PhD</p>
+                        <p>04 Oct 2024 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Heron AB-BNCT.png" alt="Heron AB-BNCT">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Heron AB-BNCT License
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://www.heron-neutron.com/en/" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system</a> and collaborate with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers.</p>
+                        <p>November 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <iframe src="https://www.youtube-nocookie.com/embed/p356p_8CoEw?si=QRke6r_N8Zgm_y3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Ignacio Porras
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=94faa22fcf" target="_blank">"Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer"</a></p>
+                        <p>by Prof. Ignacio Porras</p>
+                        <p>08 Mar 2024 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <iframe src="https://www.youtube-nocookie.com/embed/S6zP9NILo6g?si=6_BPQbv1cJxi-1Lr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            ISNCT Webinar - Naonori Hu
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p><a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=e2d8551230" target="_blank">"Personal experience during the clinical commissioning of a BNCT facility and future prospects"</a></p>
+                        <p>by Dr. Naonori Hu</p>
+                        <p>01 Dec 2023 | Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="advances-in-boron-neutron-capture-therapy.jpg" alt="Book: Advances in Boron Neutron Capture Therapy">
+                </div>
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            IAEA Publication
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" target="_blank">"Advances in Boron Neutron Capture Therapy"</a></p>
+                        <p>Published by the International Atomic Energy Agency (IAEA)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <p style="font-size: 1.1rem;"><a href="news.html" class="underline-link" target="_blank">News Repository</a></p>
+            <p style="font-size: 1.1rem; color: #666; margin-top: 10px;">More presentations and interviews on <a href="https://www.youtube.com/@isnct5685" class="underline-link" target="_blank">ISNCT YouTube channel</a></p>
+        </div>
+    </section>
+
+    <!-- How BNCT Works Section -->
+    <section class="how-it-works-section" id="how-it-works">
+        <h2 class="projects-title">How Boron Neutron Capture Therapy Works</h2>
+        <div class="how-it-works-grid">
+            <div class="how-it-works-card">
+                <img src="patient_given_a_compound_containing_Boron-10.gif" alt="Patient given a compound containing Boron-10">
+                <p>The patient is given a compound containing Boron-10.</p>
+            </div>
+
+            <div class="how-it-works-card">
+                <img src="cancer_cells_absorb_boron-10_compound.gif" alt="Cancer cells absorb boron-10 compound">
+                <p>The cancer cells absorb the compound.</p>
+            </div>
+
+            <div class="how-it-works-card">
+                <img src="exposed_to_neutrons.gif" alt="Exposed to neutrons">
+                <p>The patient is exposed to a beam of neutrons. Neutron-boron interaction initiates a nuclear reaction that releases high-energy particles, which travel up to 10 microns.</p>
+            </div>
+
+            <div class="how-it-works-card">
+                <img src="particles_cause_damage_to_the_cancer_cells.gif" alt="Particles cause damage to the cancer cells">
+                <p>Subsequently, these particles cause damage to the cancer cells.<br><br>
+                <a href="nct.html" target="_blank">Learn more about neutron capture therapy</a>
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p style="font-size: 1.1rem; color: #666;">An article introducing Boron Neutron Capture Therapy on <a href="https://www.tu.no/artikler/noytronstraler-tar-kreften/269168" class="underline-link" target="_blank">Teknisk Ukeblad</a> (in Norwegian).</p>
+        </div>
+    </section>
+
+    <!-- What is NCT Section 
+    <section class="about-section">
+        <div class="about-content">
+            <h2 class="about-title">What is Neutron Capture Therapy?</h2>
+            <p class="about-text">
+                Neutron capture therapy (NCT) uses neutrons, which are subatomic particles, to target and destroy cancer cells. A patient is given a neutron capture agent which is designed to selectively gather in cancer cells. The patient is then exposed to a beam of neutrons. When the neutrons come into contact with the neutron capture agent in the cancer cells, a nuclear reaction occurs.
+            </p>
+            <p class="about-text">
+                This nuclear reaction releases energetic particles that travel a distance within 10 microns, which can damage and destroy the cancer cells. Normal, healthy cells are less affected because they don't have as much of the capture agent.
+            </p>
+            <p class="about-text">
+                The goal of neutron capture therapy is to concentrate the destructive power in the tumour while sparing the surrounding healthy tissue as much as possible. It's a type of targeted therapy, aiming to minimise damage to normal cells and reduce side effects compared to other forms of cancer treatment.
+            </p>
+        </div>
+    </section>
+    -->
+    <!-- Related Associations Section -->
+    <section class="funding-section" id="partners">
+        <h2 class="funding-title">Related Associations</h2>
+        <div class="funding-logos">
+            <img src="ISNCT_Logo.png" alt="ISNCT" class="funding-logo" onclick="window.open('https://isnct.net/', '_blank')" title="International Society for Neutron Capture Therapy (ISNCT)">
+            <img src="jsnct_logo.png" alt="JSNCT" class="funding-logo" onclick="window.open('http://www.jsnct.jp/e/', '_blank')" title="Japanese Society of Neutron Capture Therapy (JSNCT)">
+            <img src="tsnct_logo.png" alt="TSNCT" class="funding-logo" onclick="window.open('https://tsnct.org.tw/eng/', '_blank')" title="Taiwan Society of Neutron Capture Therapy (TSNCT)">
+            <img src="dgbnct_logo.png" alt="DGBNCT" class="funding-logo" onclick="window.open('https://dgbnct.com/', '_blank')" title="German Society of Boron Neutron Capture Therapy (DGBNCT)">
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="projects-section" id="membership">
+        <h2 class="projects-title">NSNCT Membership</h2>
+        <div style="max-width: 800px; margin: 0 auto 40px; text-align: center;">
+            <p style="font-size: 1.1rem; color: #666; line-height: 1.8;">
+                NSNCT aims to promote the progress of science by facilitating interactions and cooperation between clinical medicine, radiobiology, physics, engineering, chemistry, and their related fields. If you wish to become a member, please contact the secretariat (e-mail : post@nsnct.org).
+            </p>
+        </div>
+        <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Regular Member
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>An individual who conducts research that aligns with the objectives of NSNCT.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Supporting Member
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>An individual or a group that shares the objectives of NSNCT and provides financial support for NSNCT's activities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-container" onclick="toggleDropdown(this)">
+                        <h3 class="project-title">
+                            Honorary Member
+                            <span class="dropdown-arrow">▽</span>
+                        </h3>
+                    </div>
+                    <div class="project-description">
+                        <p>An individual who has made distinguished contributions to NSNCT. Honorary membership is recommended by the executive committee of NSNCT and is approved in a general meeting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="newsletter-section" id="contact">
+        <div class="newsletter-frame">
+            <h2 class="vid-title">Get in Touch</h2>
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h3>Contact NSNCT or drop your email to stay updated</h3>
+                </div>
+                <form class="newsletter-form" action="https://formspree.io/f/mkonwzvd" method="POST">
+                    <input type="text" name="Name" class="form-input" placeholder="Name" required>
+                    <input type="text" name="Message" class="form-input" placeholder="Message">
+                    <input type="email" name="email" class="form-input" placeholder="Email and/or phone" required>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offices Section -->
+    <section class="offices-section">
+        <h2 class="projects-title">Our Office</h2>
+        <div class="offices-container">
+            <div class="offices-text">
+                <h3>Reach out to NSNCT</h3>
+                <p>
+                    <strong>Office:</strong><br>
+                    Allégaten 41, 5007 Bergen<br><br>
+                    <strong>Email:</strong><br>
+                    post@nsnct.org
+                </p>
+            </div>
+            <div class="offices-map">
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1vvc9D5bUmzZurcQgI1v57tR02q6SgYI&ehbc=2E312F&noprof=1" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="team.html" target="_blank">Team</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#how-it-works">How NCT Works</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© Norwegian Society for Neutron Capture Therapy (NSNCT) 2025</p>
+            <p>c/o Prof. Magne O. Sydnes</p>
+            <p>Allégaten 41, 5007 Bergen, Norway</p>
+            <p>Email: <a href="mailto:post@nsnct.org">post@nsnct.org</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">^</button>
+    
+    <script>
+        function toggleDropdown(titleContainer) {
+            const card = titleContainer.closest('.project-card');
+            card.classList.toggle('expanded');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-links a, .footer-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                // Only handle smooth scroll for in-page links
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            header.style.transform = `translateY(${rate}px)`;
+        });
+
+        // Form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            const inputs = this.querySelectorAll('.form-input');
+            let allFilled = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allFilled = false;
+                    input.style.borderColor = '#ff6b6b';
+                } else {
+                    input.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!allFilled) {
+                e.preventDefault();
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Scroll to Top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const scrollBtn = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
 </html>

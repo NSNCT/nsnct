@@ -46,6 +46,16 @@
             position: relative;
         }
 
+        @media (max-width: 768px) {
+            .header {
+                background-attachment: scroll;  /* Change from fixed to scroll on mobile */
+            }
+            
+            .hero-content {
+                display: none;
+            } 
+        }
+
         .nav {
             display: flex;
             justify-content: space-between;
@@ -138,6 +148,25 @@
         }
 
         .goog-te-gadget-simple img {
+            display: none !important;
+        }
+
+        /* Hide Google Translate automatic banner */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+            position: static !important;
+        }
+
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+
+        /* Only hide skiptranslate if it's the banner frame, not the widget */
+        .skiptranslate iframe {
             display: none !important;
         }
 

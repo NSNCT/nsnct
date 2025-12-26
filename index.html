@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,6 +44,16 @@
             display: flex;
             flex-direction: column;
             position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                background-attachment: scroll;  /* Change from fixed to scroll on mobile */
+            }
+            
+            .hero-content {
+                display: none;
+            } 
         }
 
         .nav {
@@ -141,6 +151,25 @@
             display: none !important;
         }
 
+        /* Hide Google Translate automatic banner */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+            position: static !important;
+        }
+
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+
+        /* Only hide skiptranslate if it's the banner frame, not the widget */
+        .skiptranslate iframe {
+            display: none !important;
+        }
+        
         .hero-content {
             flex: 1;
             display: flex;
@@ -709,6 +738,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .hero-content {
+                display: none;     /* Hide Hero Content on Mobile */
+            }
+
             .hero-text h1 {
                 font-size: 1.8rem;
             }
@@ -909,7 +942,7 @@
             <div class="project-card">
                 <div class="project-image">
                     <a href="" target="_blank">
-                    <img src="Chun-Yi_Wu_Magne Sydnes.png" alt="Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine">
+                    <img src="Chun_Yi_Wu_Magne_Sydnes.png" alt="Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine">
                     </a>
                 </div>
                 <div class="project-content">

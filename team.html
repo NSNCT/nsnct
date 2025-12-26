@@ -46,6 +46,16 @@
             position: relative;
         }
 
+        @media (max-width: 768px) {
+            .header {
+                background-attachment: scroll;  /* Change from fixed to scroll on mobile */
+            }
+            
+            .hero-content {
+                display: none;
+            }
+        }
+
         .nav {
             display: flex;
             justify-content: space-between;
@@ -165,6 +175,21 @@
             font-size: 1.5rem;
             color: #d4af37;
             font-weight: normal;
+        }
+
+        /* Hide Google Translate on mobile */
+        @media (max-width: 768px) {
+            #google_translate_element {
+                display: none !important;
+            }
+            
+            .goog-te-banner-frame {
+                display: none !important;
+            }
+            
+            body {
+                top: 0 !important;
+            }
         }
 
         /* Sections */

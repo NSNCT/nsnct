@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Collection of current and previous activities and news related to Neutron Capture Therapy.">
-    <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, neutron capture therapy, cancer treatment, boron neutron capture therapy, precision oncology, molecular imaging, news, events, conferences, webinars">
+    <meta name="description" content="Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine. August 14-15, 2025 in Bergen, Norway.">
+    <meta name="keywords" content="BNCT, NSNCT, Society for Neutron Capture Therapy, Norsk Forening for Nøytroninnfangingsterapi, ISNCT, neutron capture therapy, cancer treatment, boron neutron capture therapy, symposium, molecular imaging, precision oncology, Norway, Taiwan">
     <title>Norwegian Society for Neutron Capture Therapy (NSNCT)</title>
     <link rel="icon" type="image/png" href="nsnct-logo-128x128.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,7 +169,7 @@
         .skiptranslate iframe {
             display: none !important;
         }
-
+        
         .hero-content {
             flex: 1;
             display: flex;
@@ -554,6 +554,26 @@
             background: #d4af37;
         }
 
+        /* Event Info Banner */
+        .event-info-banner {
+            background: #2d5016;
+            color: white;
+            padding: 25px 40px;
+            text-align: center;
+        }
+
+        .event-info-banner h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: normal;
+            color: #d4af37;
+        }
+
+        .event-info-banner p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
         /* News Section */
         .privacy-section {
             background: #f5f2e8;
@@ -579,6 +599,7 @@
             color: #2d5016;
             margin-bottom: 10px;
             font-weight: normal;
+            text-align: center;
         }
 
         .effective-date {
@@ -592,12 +613,16 @@
             color: #666;
             margin-bottom: 40px;
             line-height: 1.8;
+            text-align: justify;
         }
 
         .policy-section {
             margin-bottom: 35px;
-            padding-bottom: 35px;
-            border-bottom: 1px solid #e0e0e0;
+            margin-top: 35px;
+            /* padding-bottom: 35px; */
+            padding-top: 35px;
+            /* border-bottom: 1px solid #e0e0e0; */
+            border-top: 1px solid #e0e0e0;
         }
 
         .policy-section:last-child {
@@ -609,6 +634,7 @@
             color: #2d5016;
             margin-bottom: 15px;
             font-weight: normal;
+            text-align: center;
         }
 
         .policy-list {
@@ -657,6 +683,135 @@
             color: #888;
             font-style: italic;
             margin-top: 3px;
+        }
+
+        /* Speaker Grid */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .speaker-card {
+            text-align: center;
+            padding: 20px;
+            background: #f5f2e8;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .speaker-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            border: 4px solid #d4af37;
+            background: #e0e0e0;
+        }
+
+        .speaker-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .speaker-name {
+            font-size: 1.2rem;
+            color: #2d5016;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .speaker-title {
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .speaker-talk {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .speaker-duration {
+            font-size: 0.9rem;
+            color: #999;
+            font-weight: bold;
+        }
+
+        .photo-row {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-bottom: 15px;
+        }
+
+        .photo-row .speaker-photo {
+            margin: 0;
+        }
+
+        /* Schedule List */
+        .schedule-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .schedule-list li {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #f5f2e8;
+            border-left: 5px solid #d4af37;
+            border-radius: 8px;
+        }
+
+        .schedule-list li strong {
+            font-size: 1.1rem;
+            color: #2d5016;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .schedule-list li p {
+            color: #666;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .talk-title {
+            color: #2d5016;
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+
+        /* Special Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #d4af37, #f4e4a6);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            color: #2d5016;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box p {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.7;
         }
 
         /* Footer */
@@ -738,6 +893,12 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            /* Hide Hero Content on Mobile 
+            /*
+            .hero-content {
+                display: none;     
+            }
+            */
             .hero-text h1 {
                 font-size: 1.8rem;
             }
@@ -789,161 +950,192 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <!--<li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#how-it-works">How NCT Works</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact</a></li>-->
                 <li><div id="google_translate_element"></div></li>
             </ul>
         </nav>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Advancing neutron capture therapy<br>towards better lives.</h1>
-                <!--<p></p>-->
+                <h1>Joint Norway-Taiwan Symposium</h1>
+                <p>Neutron Capture Therapy and Nuclear Medicine</p>
             </div>
         </div>
     </header>
 
-    <!-- News Content Section -->
+    <!-- Event Info Banner -->
+    <section class="event-info-banner">
+        <h2>August 14-15, 2025</h2>
+        <p><strong>Thursday, August 14, 12:15 - 15:30 PM</strong></p>
+        <p>Department of Chemistry, Realfagbygget, University of Bergen</p>
+        <p><strong> Friday, August 15, 9:30 AM - 15:30 PM</strong></p>
+        <p>Haukeland Hospital, Bikuben kurs- og konferansesenter, Bergen, Norway</p>
+    </section>
+
+    <!-- Main Content Section -->
     <section class="privacy-section">
         <div class="privacy-container">
             <div class="privacy-content">
-                <h2>News Repository</h2>
-                <p class="intro-text">Collection of current and previous activities and news related to Neutron Capture Therapy</p>
+                <h2>Advances in Neutron Capture Therapy, Precision Oncology, Molecular Imaging, and Interdisciplinary Approaches</h2>
                 
+                <p class="intro-text">
+                    The Joint Research Symposium aims to foster interdisciplinary discussions on developments in precision oncology, molecular imaging, and related interdisciplinary approaches. The event will feature a series of talks covering the latest (pre)-clinical advancements in Boron Neutron Capture Therapy (BNCT), molecular imaging techniques, radiopharmaceutical production, non-invasive tumour assessments, and innovative drug delivery systems. These meetings seek to bring together chemists, medical physicists, medical doctors, and radiotherapy experts to exchange ideas, share research progress, and lay the groundwork for impactful collaboration projects.
+                    The facility tours would give the delegation a deeper understanding of Norwegian research interests and facilities, thereby fostering collaborative research opportunities.
+                </p>
+
+                <!-- Pre-Symposium Seminar -->
                 <div class="policy-section">
-                    <h3>Upcoming Conferences & Events</h3>
-                    <ul class="policy-list">
-                        <li>
-                            <a href="https://isnct.net/blog/2024/11/15/icnct-21-argentina/" target="_blank">The 21st International Congress on Neutron Capture Therapy (ICNCT-21)</a> will be held in National University of San Martín, Buenos Aires, Argentina.
-                            <span class="news-date">Date: 25–30 October 2026 | Buenos Aires, Argentina</span>
-                        </li>
-                    </ul>
+                    <h3>Thursday, August 14, 2025</h3>
+                    
+                    <div class="highlight-box">
+                        <h3>Seminar: "Lighting the Path: Molecular Imaging for Precision Medicine"</h3>
+                        <p><strong>Time:</strong> Thursday, August 14, 12:15 PM</p>
+                        <p><strong>Location:</strong> Department of Chemistry, Realfagbygget, UiB</p>
+                        <p><strong>Speaker:</strong> Prof. Chun-Yi Wu</p>
+                        <p><strong>Chair:</strong> Prof. Magne Olav Sydnes</p>
+                    </div>
+
+                    <p class="intro-text">
+                        Molecular imaging has emerged as a powerful tool not only for visualizing biological processes in real time, but also for guiding and assessing targeted therapies, a concept at the heart of theranostics. This presentation will explore how molecular imaging technologies facilitate the precise identification of disease-specific targets, enable patient stratification, and allow real-time monitoring of treatment response. Special emphasis will be placed on the applications in radionuclide therapy and boron neutron capture therapy (BNCT), where imaging reveals the biodistribution of therapeutic agents and optimizes treatment planning and personalization.
+                    </p>
+                </div>
+                <!-- Tour -->
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 30px;">
+                        <strong>Facility Tour: Department of Chemistry, Realfagbygget, UiB</strong>
+                    </p>
+
+                    <div class="speaker-card">
+                        <div class="photo-row">
+                            <div class="speaker-photo">
+                                <img src="Chem_Dept_Tour_0.JPG" alt="Facility Tour, Dept. of Chemistry, UiB">
+                            </div>
+                            <div class="speaker-photo">
+                                <img src="Chem_Dept_Tour_1.jpeg" alt="Facility Tour, Dept. of Chemistry, UiB">
+                            </div>
+                            <div class="speaker-photo">
+                                <img src="Chem_Dept_Tour_2.jpeg" alt="Facility Tour, Dept. of Chemistry, UiB">
+                            </div>
+                        </div>
+                        <div class="speaker-name">Host: Prof. Magne Olav Sydnes</div>
+                        <div class="speaker-title">Head of Department<br>Dept. of Chemistry, University of Bergen</div>
+                    </div>
+                <!-- Norwegian Research Presentations -->
+                <div class="policy-section">
+                    <h3>Friday, August 15, 2025</h3>
+                    <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 30px;">
+                        <strong>Norwegian Research Presentations</strong>
+                    </p>
+
+                    <div class="speakers-grid">
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="https://kjeminytt.w.uib.no/files/2023/09/Eduard-Pogorilyy-scaled-e1694419890348-768x784.jpg" alt="Eduard Pogorilyy">
+                            </div>
+                            <div class="speaker-name">Eduard Pogorilyy</div>
+                            <div class="speaker-title">Ph.D. Candidate<br>University of Bergen</div>
+                            <div class="speaker-talk">"[<sup>45</sup>Ti]Ti–DOTA Complex: En Route Towards Novel Radiopharmaceutical for PET Imaging"</div>
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Tom_Christian_Holm_Adamsen.JPG" alt="Tom Christian Holm Adamsen">
+                            </div>
+                            <div class="speaker-name">Tom Christian Holm Adamsen</div>
+                            <div class="speaker-title">Assistant Professor II<br>University of Bergen & Haukeland Hospital</div>
+                            <div class="speaker-talk">"Current Radiochemistry Research at Haukeland Hospital and University of Bergen"</div>
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="https://www.uib.no/sites/w3.uib.no/files/styles/content_main/public/media/cstokkevag.jpg?itok=iagLmyuE" alt="Camilla Hanquist Stokkevåg">
+                            </div>
+                            <div class="speaker-name">Camilla Hanquist Stokkevåg</div>
+                            <div class="speaker-title">Associate Professor<br>University of Bergen & Haukeland Hospital</div>
+                            <div class="speaker-talk">"Research at the Medical Physics Group, University of Bergen"<br>(Radiation Therapy, Proton Therapy)</div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Main Symposium - Taiwanese Delegation -->
                 <div class="policy-section">
-                    <h3>Developments</h3>
-                    <ul class="policy-list">
-                        <li>
-                            <a href="https://www.heron-neutron.com/en/" target="_blank">Heron Neutron Medical received a medical device license for its Accelerator-Based Boron Neutron Capture Therapy (AB-BNCT) system</a> and collaborated with Taipei Veterans General Hospital to initiate a clinical trial for refractory cancers
-                            <span class="news-date">News Published: November 2024</span>
-                        </li>
-                    </ul>
+                    
+                    <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 30px;">
+                        <strong>Taiwan Research Presentations</strong>
+                    </p>
+
+                    <div class="speakers-grid">
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Yi_Wei_Chen.png" alt="Yi-Wei Chen">
+                            </div>
+                            <div class="speaker-name">Yi-Wei Chen, M.D., Ph.D.</div>
+                            <div class="speaker-title">Attending Physician<br>Taipei Veterans General Hospital</div>
+                            <div class="speaker-talk">"Latest Development of Clinical BNCT in Taiwan"</div>
+                            <!--<div class="speaker-duration">30 minutes</div>-->
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Chun_Yi_Wu.JPG" alt="Chun-Yi Wu">
+                            </div>
+                            <div class="speaker-name">Chun-Yi Wu, Ph.D.</div>
+                            <div class="speaker-title">Associate Professor<br>National Yang Ming Chiao Tung University</div>
+                            <div class="speaker-talk">"Seeing is Believing: Molecular Imaging in Boron Neutron Capture Therapy"</div>
+                            <!--<div class="speaker-duration">30 minutes</div>-->
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Ting_Yu_Chang.png" alt="Ting-Yu Chang">
+                            </div>
+                            <div class="speaker-name">Ting-Yu Chang</div>
+                            <div class="speaker-title">Ph.D. Candidate<br>National Yang Ming Chiao Tung University</div>
+                            <div class="speaker-talk">"Production of <sup>18</sup>F-FBPA and Its Applications in BNCT"</div>
+                            <!--<div class="speaker-duration">30 minutes</div>-->
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Min_Tzu_Ku.JPG" alt="Min-Tzu Ku">
+                            </div>
+                            <div class="speaker-name">Min-Tzu Ku</div>
+                            <div class="speaker-title">Ph.D. Candidate<br>National Yang Ming Chiao Tung University</div>
+                            <div class="speaker-talk">"Non-Invasive Imaging Assessment of Tumor PD-L1 Expression after BNCT"</div>
+                            <!--<div class="speaker-duration">30 minutes</div>-->
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-photo">
+                                <img src="Hui_Wen_Chan.JPG" alt="Hui-Wen Chan">
+                            </div>
+                            <div class="speaker-name">Hui-Wen Chan, Ph.D.</div>
+                            <div class="speaker-title">Post-doctoral Fellow<br>National Yang Ming Chiao Tung University</div>
+                            <div class="speaker-talk">"Macrophage-Based Drug Delivery for Cancer Therapy"</div>
+                            <!--<div class="speaker-duration">30 minutes</div>-->
+                        </div>
+
+                    </div>
                 </div>
 
+                <!-- Purpose Section -->
                 <div class="policy-section">
-                    <h3>ISNCT Webinars</h3>
-                    <ul class="policy-list">
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=54976c3b39" target="_blank">Building BNCT</a>
-                            <span class="news-speaker">Speaker: Prof. Silva Bortolussi</span>
-                            <span class="news-date">Date: 5 September 2025 | Online</span>
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=635f7423a5" target="_blank">BNCT for Three-Dimensional Oral Cancer Model</a>
-                            <span class="news-speaker">Speaker: Prof. Kazuyo Igawa</span>
-                            <span class="news-date">Date: 9 May 2025 | Online</span>
-                        </li>
+                    <!-- Tour -->
+                    <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 30px;">
+                        <strong>Facility Tour:<br>Bergen Proton Center<br>Haukeland Hospital - Center for Nuclear Medicine & PET</strong>
+                    </p>
 
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=ed6db35f22" target="_blank">Proton and high-LET radiobiology research at the RadNet Birmingham Centre</a>
-                            <span class="news-speaker">Speaker: Prof. Jason Parsons</span>
-                            <span class="news-date">Date: 21 March 2025 | Online</span>
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=d163939ac9" target="_blank">Report of ASTRO Annual Meeting and Lecture on Clinical Experience of Accelerator BNCT in Japan</a>
-                            <span class="news-speaker">Speaker: Prof. Keiji Nihei</span>
-                            <span class="news-date">Date: 13 December 2024 | Online</span>
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=52a1606c9d" target="_blank">The past and future of International Society for Neutron Capture Therapy. What are the challenges for us?</a>
-                            <span class="news-speaker">Speaker: Prof. Akira Matsumura</span>
-                            <span class="news-date">Date: 04 October 2024 | Online</span>
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=94faa22fcf" target="_blank">Perspectives in Boron Neutron Capture Therapy: accelerating a new hope in the fight of cancer</a>
-                            <span class="news-speaker">Speaker: Prof. Ignacio Porras (University of Granada, Spain)</span>
-                            <span class="news-date">Date: 08 March 2024 | Online</span>
-                        </li>                
-                        <li>
-                            <a href="https://isnct.net/blog/2023/11/27/1st-webinar-of-the-isnct-naonori-hu/" target="_blank">Personal experience during the clinical commissioning of a BNCT facility and future prospects</a>
-                            <span class="news-speaker">Speaker: Dr. Naonori Hu (Kansai BNCT Medical Center, Japan)</span>
-                            <span class="news-date">Date: 01 December 2023 | Online</span>
-                        </li>
-                    </ul>
+                    <div class="speaker-card">
+                        <div class="photo-row">
+                            <div class="speaker-photo">
+                                <img src="Proton_Center_Tour_1.jpeg" alt="Facility Tour, Bergen Proton Center">
+                            </div>
+                            <div class="speaker-photo">
+                                <img src="Proton_Center_Tour_2.jpg" alt="Facility Tour, Bergen Proton Center">
+                            </div>
+                            <div class="speaker-photo">
+                                <img src="PET_Center_Tour.JPG" alt="Facility Tour, Bergen PET Center">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="policy-section">
-                    <h3>Conferences & Events</h3>
-                    <ul class="policy-list">
-                        <li>
-                            <a href="NO_TW_symposium.html" target="_blank">Joint Norway-Taiwan Symposium on Neutron Capture Therapy and Nuclear Medicine</a>
-                            <span class="news-date">Date: 14-15 August 2025 | University of Bergen & Haukeland Hospital</span>
-                        </li>
-                        <li>
-                            <a href="https://in-tex.co.jp/jsnct21/" target="_blank">21st Congress on Neutron Capture Therapy of Japanese Society of Neutron Capture Therapy (JSNCT)</a>
-                            <span class="news-date">Date: 25-26 July 2025 | Nagasaki University</span>
-                        </li>
-                        <li>
-                            <a href="https://www.euroboron10.eu" target="_blank">10th European Conference on Boron Chemistry (Euroboron10)</a>
-                            <span class="news-date">Date: 06-10 July 2025 | Łódź, Poland</span>
-                        </li>
-                        <li>
-                            <a href="https://ptcog63.org/" target="_blank">63rd Annual Conference of the Particle Therapy Cooperative Group (PTCOG)</a>
-                            <span class="news-date">Date: 02-07 June 2025 | Buenos Aires, Argentina</span>
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/?u=24744bc99c0bf8b960f093b4b&id=2c2f7a72b3" target="_blank">BNCT Drug Development Update</a>
-                            <span class="news-speaker">Speakers: Dave Greenwald (Aviko Radiopharmaceuticals), Kido Takahiro (Stella Pharma), and Kendall Morrison (TAE Life Sciences)</span>
-                            <span class="news-date">Date: 4 March 2025 | Online</span>
-                        </li>
-                        <li>
-                            <a href="https://icnct20.org/" target="_blank">20th International Congress on Neutron Capture Therapy</a>
-                            <span class="news-date">Date: 24-28 June 2024 | Kraków, Poland</span>
-                        </li>
-                        <li>
-                            <a href="https://ptcog-ao2023.org/" target="_blank">Asia-Oceania Particle Therapy Co-Operative Group (PTCOG-AO) Conference and International Summit of Taiwan's Particle Therapy (ISTPT)</a>
-                            <span class="news-date">Date: 24-26 November 2023 | Taiwan</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="policy-section">
-                    <h3>Projects</h3>
-                    <ul class="policy-list">
-                        <li>
-                            Project "<a href="https://nva.sikt.no/projects/2673904" target="_blank">Advancing BNCT: Innovations in Boron Compound Enhancement, Drug Delivery, and Theranostics</a>" is funded by UH-nett Vest (College Network in Western Norway) with participation from HVL, UiS, UiB, Haukeland University Hospital, and Norwegian Society for Neutron Capture Therapy.
-                            <span class="news-date">December 2023</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="policy-section">
-                    <h3>Publications & Resources</h3>
-                    <ul class="policy-list">
-                        <li>
-                            Book: <a href="https://www.iaea.org/publications/15339/advances-in-boron-neutron-capture-therapy" target="_blank">"Advances in Boron Neutron Capture Therapy"</a>
-                            <span class="news-date">Published by the International Atomic Energy Agency (IAEA)</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="policy-section">
-                    <h3>Additional Resources</h3>
-                    <ul class="policy-list">
-                        <li>
-                            <a href="https://www.youtube.com/@isnct5685" target="_blank">ISNCT YouTube Channel</a> - Watch presentations and interviews
-                        </li>
-                        <li>
-                            <a href="https://isnct.net/" target="_blank">International Society for Neutron Capture Therapy (ISNCT)</a> - Comprehensive news and updates
-                        </li>
-                        <li>
-                            <a href="https://us2.campaign-archive.com/home/?u=24744bc99c0bf8b960f093b4b&id=98545f354f" target="_blank">ISNCT News & Webinar Archives</a>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </section>
@@ -952,7 +1144,7 @@
     <footer class="footer" id="footer">
         <div class="footer-nav">
             <ul class="footer-links">
-                <li><a href="https://nsnct.org/">NSNCT Home Page</a></li>
+                <li><a href="index.html">NSNCT Home Page</a></li>
             </ul>
         </div>
         <div class="footer-bottom">

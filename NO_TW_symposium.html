@@ -893,18 +893,20 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            /* Hide Hero Content on Mobile 
-            /*
-            .hero-content {
-                display: none;     
+            .header {
+                background-attachment: scroll;
             }
-            */
+
+            .hero-content {
+                display: none;
+            }
+
             .hero-text h1 {
                 font-size: 1.8rem;
             }
-            
+
             .hero-text p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             .nav {
@@ -918,21 +920,29 @@
                 gap: 15px;
             }
 
-            .projects-grid,
-            .how-it-works-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .newsletter-container {
-                padding: 30px;
-            }
-
             .privacy-content {
                 padding: 40px 30px;
             }
 
             .privacy-content h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
+            }
+
+            .speakers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .event-info-banner h2 {
+                font-size: 1.4rem;
+            }
+
+            .event-info-banner p {
+                font-size: 1rem;
+            }
+            .photo-row {
+                flex-direction: column;  /* photos vertically on mobile */
+                align-items: center;     /* Center them horizontally */
+                gap: 15px;               /* adjusts spacing */
             }
         }
     </style>
